@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 56" width="55" height="56">
+	<defs>
+		<image width="43" height="44" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAsAQMAAADGltM7AAAAAXNSR0IB2cksfwAAAAZQTFRFGRkZ////weEhaAAAAAJ0Uk5T/wDltzBKAAAALklEQVR4nGNgwAP+A8E/HBQIyOGg+CFKsFNQJVgpfogSrBQ+fXjsw+dOQv7DAQBViFbhqHzpzAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="navigation">
+		<g id="logo">
+			<use id="Layer 2785" href="#img1" x="6" y="6" />
+		</g>
+	</g>
+</svg>
