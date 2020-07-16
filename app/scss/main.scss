@@ -1,14 +1,23 @@
 @import 'config';
 
 // CUSTOM USER STYLES & IMPORTS
+*{
+    font-family: "Ubuntu";
+}
+
 .header{
     position: relative;
+    background-color: rgb(235, 236, 238);
     width: 100%;
-    background-color: rgb(235, 236, 238);   
+    
+       
 }
 
 .header__nav{
+    position: -webkit-sticky;
     position: sticky;
+    top: 0;
+    z-index: 9999;
     display: flex;
     width: 100%;
     height: 80px;
@@ -16,9 +25,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    margin-bottom: 450px;
-    // z-index: 9999;
-
+    
 }
 
 .logo__img{
@@ -41,32 +48,74 @@ span{
 }
 
 
-.order__link{
+.order__button{
     border: none;
-    width: 170px;
-    height: 60px;
-    margin-left: 30px;
+    padding: 15px 50px;
     background-color: white;
     text-align: center;
     border-radius: 30px;
-}
-
-.order__link-text{
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.header__background{
-    position: absolute;  
-    z-index: -1;
-    // display: none;
+.header__title{
+    position: relative;
+
+    display: block;
+    background-color: rgb(235, 236, 238);
+}
+.title__img{
+    float: right;
+    min-width: 1440px;  
+    @media screen and (max-width: 1452px) {
+        float:left;
+        max-width: 1400px;
+    }  
+    margin-bottom: 90px; 
+}
+.title{
+    text-align: center;
+    position: absolute;
+    width: 700px;
+    top:310px; 
+     
 }
 
-.title-text{
+
+.title__text{
     font-size: 60px;
     color: #222222;
     font-weight: 300;
-    font-family: "Ubuntu";
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title__button{
+	border: none;
+	padding: 15px 50px;
+	background-color: white;
+	text-align: center;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;	
+    
+}
+
+//main
+
+.about{
     text-align: center;
 
+.about__title-text{
+    padding: 40px 0;
+}
+.about__title-group{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.about__small-block{
+    img{
+        width: 370px;
+        height: 260px;
+    }
 }
