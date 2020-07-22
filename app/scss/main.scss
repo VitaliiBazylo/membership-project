@@ -4,7 +4,7 @@
 *{
     font-family: "Ubuntu";
 }
-
+    //Header
 .header{
     position: relative;
     background-color: rgb(235, 236, 238);
@@ -63,21 +63,25 @@ span{
 
     display: block;
     background-color: rgb(235, 236, 238);
+    
 }
 .title__img{
-    float: right;
-    min-width: 1440px;  
-    @media screen and (max-width: 1452px) {
-        float:left;
-        max-width: 1400px;
-    }  
-    margin-bottom: 90px; 
+    background-image: url(/img/title-background.png) no-repeat;
+    background-color: rgb(235, 236, 238);
+    // float: left;
+    // height: 1000px; 
+    // @media screen and (max-width: 1452px) {
+    //     float:left;
+    //     max-width: 1400px;
+    // }  
+    // margin-bottom: 90px; 
 }
 .title{
     text-align: center;
     position: absolute;
     width: 700px;
     top:310px; 
+    
      
 }
 
@@ -100,22 +104,69 @@ span{
     
 }
 
-//main
+//Main
 
 .about{
     text-align: center;
-
+}
 .about__title-text{
-    padding: 40px 0;
+    padding: 40px 20px;
 }
-.about__title-group{
-    display: inline-flex;
-    justify-content: space-between;
-}
+// .about__title-group{
+//     display: flex;
+//     justify-content: space-evenly;
+// }
 
 .about__small-block{
     img{
         width: 370px;
         height: 260px;
+    }
+}
+// .small-block__text{
+//     padding: 10px 50px;
+// }
+.about__title-grid{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, 480px);
+    // grid-template-rows: 250px 250px 250px;
+    text-align: left;
+    
+    .grid__item-text{
+        padding: 60px;
+        h2{
+            margin-bottom: 18px;
+        }
+    }
+    img{
+        width: 480px;
+        height: 280px;
+    }
+    :nth-child(6){
+        grid-column-start: 3; 
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-image: url(/img/space.png);
+    }
+    :nth-child(7) 
+    {
+        background-color: #f4f0eb;
+        
+    }
+    :nth-child(8) 
+    {
+        background-color: #f4f0eb;
+        
+        img{
+            width: 200px;
+            height: 200px;
+            
+
+        }
+    }
+    .underline{
+        width: 35px;
+        border-bottom: solid black 2px;
+        margin-bottom: 18px;
     }
 }
