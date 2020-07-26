@@ -4,40 +4,17 @@
 *{
     font-family: "Ubuntu";
 }
-.navbar-toggler-icon {
-    background-image: url("/img/logo.png");
-}
-    //Header
-// .header{
-//     position: relative;
-//     background-color: rgb(235, 236, 238);
-//     width: 100%;
-    
-       
-// }
 
-.navbar{
-    background-color: rgb(235, 236, 238);
-}
+
+// .navbar{
+//     background-color: rgb(235, 236, 238);
+// }
 
 .logo__img{
     width: 40px;
     height: 40px;
 }
-// .nav{
-//     font-weight: bold;
-//     align-items: center;
-//     font-size: 14px;
-// }
 
-// span{
-//     color: #000;
-    
-// }
-    
-// .menu__item{
-//     margin-right: 50px;
-// }
 
 
 .order__button{
@@ -71,69 +48,5 @@
     
 }
 
-//Main
+// Main
 
-.about{
-    text-align: center;
-}
-.about__title-text{
-    padding: 40px 20px;
-}
-// .about__title-group{
-//     display: flex;
-//     justify-content: space-evenly;
-// }
-
-.about__small-block{
-    img{
-        width: 370px;
-        height: 260px;
-    }
-}
-// .small-block__text{
-//     padding: 10px 50px;
-// }
-.about__title-grid{
-    display: grid;
-    grid-template-columns:  repeat(auto-fit, 480px);
-    // grid-template-rows: 250px 250px 250px;
-    text-align: left;
-    
-    .grid__item-text{
-        padding: 60px;
-        h2{
-            margin-bottom: 18px;
-        }
-    }
-    img{
-        width: 480px;
-        height: 280px;
-    }
-    :nth-child(6){
-        grid-column-start: 3; 
-        grid-row-start: 2;
-        grid-row-end: 4;
-        background-image: url(/img/space.png);
-    }
-    :nth-child(7) 
-    {
-        background-color: #f4f0eb;
-        
-    }
-    :nth-child(8) 
-    {
-        background-color: #f4f0eb;
-        
-        img{
-            width: 200px;
-            height: 200px;
-            
-
-        }
-    }
-    .underline{
-        width: 35px;
-        border-bottom: solid black 2px;
-        margin-bottom: 18px;
-    }
-}
