@@ -10,21 +10,10 @@ $roboto: Roboto, sans-serif; // Roboto Font Family
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;
 $gutter: $grid-gutter-width;
-:root {
-	--light: #ebecee,	
-	--dark: #0d0d0d,
-};
-
-// .navbar-toggler-icon {
-// 	display: inline-block;
-// 	width: 1.5em;
-// 	height: 1.5em;
-// 	vertical-align: middle;
-// 	content: "";
-// 	background: no-repeat center center;
-// 	background-size: 100% 100%;
-// 	background-image: url(/img/logo.svg);
-//   }
+$theme-colors: (
+  "main-light": #ebecee,
+  "main-dark": #101010
+);
 
 // IMPORT SECTION
 
@@ -49,12 +38,14 @@ $gutter: $grid-gutter-width;
 	background-color: white;
 	text-align: center;
 	border-radius: 30px;
+	text-decoration: none;
 }
 
 @include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2');
 @include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2');
 @include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2');
 @include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
+@include font('Ubuntu', normal, 300, '../fonts/ubuntu-v14-latin-regular.woff2');
 // GENERAL DOCUMENT STYLES
 
 ::placeholder {
@@ -82,3 +73,27 @@ body {
 	color: $textcolor;
 }
 
+.my-navbar-toggler {
+	padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+	@include font-size($navbar-toggler-font-size);
+	line-height: 1;
+	background-color: transparent; // remove default button style
+	 // remove default button style
+	// @include border-radius($navbar-toggler-border-radius);
+	border: none;
+	@include hover-focus() {
+	  text-decoration: none;
+	}
+  }
+
+.my-navbar-toggler-icon {
+	display: inline-block;
+	width: 2.5em;
+	height: 2.5em;
+	vertical-align: middle;
+	content: "";
+	background: no-repeat center center;
+	background-size: 100% 100%;
+	background-image: url(/img/logo.svg);
+	
+  }
