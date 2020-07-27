@@ -33,7 +33,7 @@
     text-align: center;
     position: absolute;
     // margin: 0 auto;
-    top:310px; 
+    top:410px; 
 }
 
 .title__text{
@@ -44,8 +44,11 @@
     margin-bottom: 60px;
 }
 .title__button{
-	@include main-button;
-    
+	@include main-button;  
+}
+
+.navbar-nav{
+    justify-content: end;
 }
 
 // Main
