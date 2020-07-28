@@ -11298,10 +11298,4 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
-
-.navbar-nav {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
 /*# sourceMappingURL=main.css.map */
