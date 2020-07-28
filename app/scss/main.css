@@ -11256,6 +11256,14 @@ body {
   font-family: "Ubuntu";
 }
 
+.navbar {
+  font-weight: bold;
+}
+
+.link__text {
+  color: #333333;
+}
+
 .order__button {
   border: none;
   padding: 15px 50px;
@@ -11297,5 +11305,22 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
+}
+
+.about__header {
+  max-width: 1200px;
+  margin-bottom: 140px;
+}
+
+.about__title {
+  padding-top: 100px;
+}
+
+.about__title-text {
+  padding: 35px;
+}
+
+.grid__item {
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */
