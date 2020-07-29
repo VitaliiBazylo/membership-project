@@ -11178,7 +11178,14 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 300;
-  src: local("Ubuntu"), url("../fonts/ubuntu-v14-latin-regular.woff2") format("woff2");
+  src: local("Ubuntu"), url("../fonts/ubuntu-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato"), url("../fonts/lato-regular.woff2") format("woff2");
 }
 
 ::-webkit-input-placeholder {
@@ -11321,6 +11328,113 @@ body {
 }
 
 .grid__item {
+  height: 400px;
   padding: 0;
+}
+
+.demo__block {
+  padding: 180px 0;
+}
+
+.demo-img {
+  width: 100%;
+}
+
+.demo__title {
+  padding: 0 100px;
+}
+
+.description__icon {
+  background-image: url(/img/demo-icon.svg);
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px;
+}
+
+.description-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.voice {
+  background-position: 0 0;
+}
+
+.music {
+  background-position: 0 -135px;
+}
+
+.water {
+  background-position: 0 -270px;
+}
+
+.description-button {
+  border: none;
+  padding: 15px 50px;
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #e5e1e1;
+}
+
+.about__price {
+  background-image: url(/img/price-bg.png);
+  background-repeat: no-repeat;
+  background-color: #0f0f0f;
+  padding: 250px 0px;
+}
+
+.about__price {
+  color: white;
+}
+
+.price__item {
+  padding-bottom: 100px;
+}
+
+.price__title {
+  padding-bottom: 140px;
+}
+
+.price-title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 64px;
+  color: #c89d28;
+  font-weight: 100;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.price-currency {
+  padding-top: 15px;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+.price-value {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.price-text {
+  padding: 40px 90px;
+}
+
+.price-button {
+  border: none;
+  padding: 15px 50px;
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  width: 250px;
 }
 /*# sourceMappingURL=main.css.map */
