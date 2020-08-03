@@ -11259,6 +11259,58 @@ body {
   background-image: url(/img/logo.svg);
 }
 
+.my-carousel-control-prev,
+.my-carousel-control-next {
+  margin: 0 auto;
+  padding: 10px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  background: none;
+  text-align: center;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .my-carousel-control-prev,
+  .my-carousel-control-next {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.my-carousel-control-prev:hover, .my-carousel-control-prev:focus,
+.my-carousel-control-next:hover,
+.my-carousel-control-next:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.my-carousel-control-prev-icon,
+.my-carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat 50% / 100% 100%;
+}
+
+.my-carousel-control-prev-icon {
+  background-image: url(/img/prew-icon.svg);
+}
+
+.my-carousel-control-next-icon {
+  background-image: url(/img/next-icon.svg);
+}
+
 * {
   font-family: "Ubuntu";
 }
@@ -11464,5 +11516,214 @@ body {
 
 .about__privilege {
   max-width: 1200px;
+}
+
+.privilege-icon {
+  width: 75px;
+  height: 75px;
+  fill: #c79d27;
+}
+
+.about__facts {
+  background-image: url(/img/price-bg.png);
+  background-repeat: no-repeat;
+  background-color: #0f0f0f;
+  padding: 250px 0px;
+}
+
+.facts__group {
+  padding: 0 150px;
+}
+
+.about__facts {
+  color: white;
+}
+
+.facts__item {
+  padding-bottom: 100px;
+}
+
+.facts__title {
+  font-size: 48px;
+  padding-bottom: 140px;
+}
+
+.facts-currency {
+  padding-top: 15px;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+.facts-value {
+  font-size: 64px;
+  color: #c89d28;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-weight: 100;
+}
+
+.facts-text {
+  font-size: 18px;
+}
+
+.facts__h3 {
+  max-width: 811px;
+  font-size: 24px;
+  color: #999999;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.about__reviews {
+  padding: 70px 0;
+}
+
+.reviews__h2 {
+  font-size: 30px;
+}
+
+.reviews__icons {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.icons-item {
+  width: 15%;
+  height: 15%;
+  padding: 0 4%;
+}
+
+.reviews__h2 {
+  font-size: 30px;
+  color: #333333;
+  font-weight: 300;
+  padding: 150px 0 80px 0;
+}
+
+.reviews__comment {
+  padding-top: 120px;
+  max-width: 709px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.comment-text {
+  height: 127px;
+  font-size: 22px;
+  line-height: 27px;
+  color: #333333;
+}
+
+.comment-author {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.comment-place {
+  color: #999999;
+}
+
+.reviews__control-block {
+  padding: 50px 0;
+}
+
+.footer__title {
+  height: 430px;
+  padding: 120px 0;
+  background-image: url(/img/footer-title.png);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.footer-button {
+  border: none;
+  padding: 15px 50px;
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-h2 {
+  padding: 5px 0;
+}
+
+.footer-p {
+  padding: 30px 0;
+}
+
+.footer__contacts {
+  color: #ffffff;
+  background: #0d0d0d;
+  padding: 120px 0;
+}
+
+.contacts__social,
+.contacts__services {
+  padding-top: 70px;
+  max-width: 500px;
+}
+
+.social-h2,
+.services-h2 {
+  padding-bottom: 43px;
+  text-transform: uppercase;
+}
+
+.social-p {
+  padding-bottom: 30px;
+  color: #666666;
+}
+
+.social-link {
+  padding-right: 30px;
+}
+
+.social-img {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+.contacts__services {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services-link:hover {
+  text-decoration: none;
+}
+
+.services-text {
+  color: #ffffff;
+}
+
+.footer__signature {
+  padding-top: 150px;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-transform: uppercase;
+}
+
+.signature-link {
+  color: #c89d28;
+}
+
+.signature-link:hover {
+  text-decoration: none;
+  color: #6b5416;
 }
 /*# sourceMappingURL=main.css.map */

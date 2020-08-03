@@ -100,3 +100,39 @@ body {
 	background-image: url(/img/logo.svg);
 	
   }
+
+  .my-carousel-control-prev,
+  .my-carousel-control-next {
+	margin: 0 auto;
+	padding: 10px;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	background: none;
+	text-align: center;
+	opacity: $carousel-control-opacity;
+	@include transition($carousel-control-transition);
+  
+	// Hover/focus state
+	@include hover-focus() {
+	  color: $carousel-control-color;
+	  text-decoration: none;
+	  outline: 0;
+	  opacity: $carousel-control-hover-opacity;
+	}
+  }
+  
+  .my-carousel-control-prev-icon,
+  .my-carousel-control-next-icon {
+	display: inline-block;
+	width: $carousel-control-icon-width;
+	height: $carousel-control-icon-width;
+	background: no-repeat 50% / 100% 100%;
+  }
+  .my-carousel-control-prev-icon {
+	background-image: url(/img/prew-icon.svg);
+  }
+  .my-carousel-control-next-icon {
+	background-image: url(/img/next-icon.svg);
+  } 
