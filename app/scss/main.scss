@@ -28,7 +28,7 @@
     top:410px; 
 }
 
-.title__text{
+.title-text{
     font-size: 60px;
     color: #222222;
     font-weight: 300;
@@ -48,9 +48,51 @@
     padding: 35px;
 }
 
-.grid__item{
+.grid__item-text{
     height: 400px;
-    padding: 0;
+}
+.grid__item-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.grid-h2::after{
+    width: 40px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.girl{
+    background-image: url(/img/girl.png);
+    
+}
+.comunity{
+    background-image: url(/img/comunity.png);
+    
+}
+.cup{
+    
+    background-image: url(/img/cup.png);
+    background-repeat: no-repeat;
+    background-size: 310px 370px;
+    background-position: 50% 30px;
+
+    
+}
+.is-sand{
+    background-color: #f4f0eb;
+}
+.goal-top{
+    background-image: url(/img/space.png);
+}
+.goal-bottom{
+    background-image: url(/img/space.png);
+    background-repeat: no-repeat;
+    background-position: 0 -400px;
+    color: #ffffff;
+    .underline{
+        border-bottom: 2px solid #ffffff;
+    }
 }
 .demo__block{
     padding: 180px 0;
@@ -124,7 +166,7 @@
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
-.price-text{
+.price-p{
     padding: 40px 90px;
 }
 
@@ -138,25 +180,91 @@
     // padding: 100px 50px;
 }
 .news__block-img{
-    width: 90%;
+    width: 100%;
     height: 67%;
     object-fit:cover;  
 }
 
+.news__block-top{
+    position: relative;
+    .news__block-img{
+       height: 100%; 
+    }
+    margin-bottom: 60px;
+}
+.news__subblock{
+    position: relative;
+}
+.news__block-title{
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Ubuntu";
+    text-align: center;
+    padding: 0 80px;
+}
+.news-label{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+.lebel-text{
+    @include main-button;
+    padding: 15px 25px;
+    background: #8d7431;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    text-align: center;
+    
+}
+.news__block-p{
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #cccccc;
+    font-weight: 300;
+    font-family: "Ubuntu";
+    text-align: center;
+    text-transform: uppercase;
+}
+.news-author{
+    color: #c89d28;
+}
+
+.news__block-text{
+    padding: 25px 0;
+}
 
 .news__button{
     @include main-button;
-    width: 270px
-
+    width: 270px;
 }
 
 .about__privilege{
-    max-width: 1200px;
+    padding: 0 5%;
+}
+.privilege-h3{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Ubuntu";
 }
 .privilege-icon{
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     fill: #c79d27;
+}
+.privilege-p{
+    width: 294px;
+    height: 283px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Ubuntu";
 }
 
 .about__facts{
