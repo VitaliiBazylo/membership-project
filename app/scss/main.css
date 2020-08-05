@@ -11489,12 +11489,9 @@ body {
   color: white;
 }
 
-.price__item {
-  padding-bottom: 100px;
-}
-
+.price__item,
 .price__title {
-  padding-bottom: 140px;
+  margin-bottom: 100px;
 }
 
 .price-title {
@@ -11666,13 +11663,13 @@ body {
   color: white;
 }
 
-.facts__item {
-  padding-bottom: 100px;
+.facts__item,
+.facts__title {
+  margin-bottom: 100px;
 }
 
 .facts__title {
   font-size: 48px;
-  padding-bottom: 140px;
 }
 
 .facts-currency {
@@ -11777,11 +11774,11 @@ body {
 }
 
 .footer-h2 {
-  padding: 5px 0;
+  margin-bottom: 30px;
 }
 
 .footer-p {
-  padding: 30px 0;
+  margin-bottom: 20px;
 }
 
 .footer__contacts {
@@ -11798,12 +11795,12 @@ body {
 
 .social-h2,
 .services-h2 {
-  padding-bottom: 43px;
+  margin-bottom: 43px;
   text-transform: uppercase;
 }
 
 .social-p {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: #666666;
 }
 
@@ -11837,7 +11834,7 @@ body {
 }
 
 .footer__signature {
-  padding-top: 150px;
+  margin-top: 150px;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
