@@ -1,10 +1,10 @@
 @import 'config';
 
-// CUSTOM USER STYLES & IMPORTS
 * {
     font-family: "Ubuntu";
 }
 .navbar  {
+    width: 100%;
     font-weight: bold;
     .link__text {
         color: #333333;
@@ -56,7 +56,7 @@
     
     
     .goal-top {
-        background-image: url("/img/space.png)";
+        background-image: url("/img/space.png");
     }
     .goal-bottom {
         background-image: url("/img/space.png");
@@ -262,7 +262,7 @@
 }
 
 .about__facts {
-    background-image: url("/img/price-bg.png)";
+    background-image: url("/img/price-bg.png");
     background-repeat: no-repeat;
     background-color: #0f0f0f;
     padding: 250px 0px;
