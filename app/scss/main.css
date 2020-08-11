@@ -11308,6 +11308,12 @@ body {
   outline: none;
 }
 
+.container {
+  margin: 0;
+  width: 100px;
+  text-align: center;
+}
+
 .header__title {
   width: 100%;
   height: 900px;
