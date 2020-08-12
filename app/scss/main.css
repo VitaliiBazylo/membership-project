@@ -11160,6 +11160,46 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   src: local("Lato"), url("../fonts/lato-regular.woff2") format("woff2");
 }
 
+.my-h1 {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  .my-h1 {
+    font-size: 30px;
+  }
+}
+
+.my-h2 {
+  font-size: 48px;
+}
+
+@media screen and (max-width: 900px) {
+  .my-h2 {
+    font-size: 24px;
+  }
+}
+
+.my-h3 {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .my-h3 {
+    font-size: 15px;
+  }
+}
+
+.text {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+  .text {
+    font-size: 10px;
+  }
+}
+
 ::-webkit-input-placeholder {
   color: #666;
 }
@@ -11288,7 +11328,6 @@ body {
 }
 
 .navbar {
-  width: 100%;
   font-weight: bold;
 }
 
@@ -11329,7 +11368,6 @@ body {
 }
 
 .header__title .title .title-text {
-  font-size: 60px;
   color: #222222;
   font-weight: 300;
   margin-bottom: 60px;
@@ -11686,10 +11724,6 @@ body {
   padding: 70px 0;
 }
 
-.reviews__h2 {
-  font-size: 30px;
-}
-
 .reviews__icons {
   max-width: 1500px;
   margin: 0 auto;
@@ -11742,10 +11776,6 @@ body {
   background-image: url("/img/footer-title.png");
   background-size: cover;
   color: #ffffff;
-}
-
-.footer__title .footer-h2 {
-  margin-bottom: 30px;
 }
 
 .footer__title .footer-p {

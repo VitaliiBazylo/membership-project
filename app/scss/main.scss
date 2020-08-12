@@ -4,7 +4,6 @@
     font-family: "Ubuntu";
 }
 .navbar  {
-    width: 100%;
     font-weight: bold;
     .link__text {
         color: #333333;
@@ -29,7 +28,6 @@
         position: absolute;
         top:410px;
         .title-text {
-            font-size: 60px;
             color: #222222;
             font-weight: 300;
             margin-bottom: 60px;
@@ -314,9 +312,7 @@
 .about__reviews {
     padding: 70px 0;
 }
-.reviews__h2 {
-    font-size: 30px;
-}
+
 .reviews__icons {
     max-width: 1500px;
     margin: 0 auto;
@@ -365,9 +361,6 @@
     background-image: url("/img/footer-title.png");
     background-size: cover;
     color: #ffffff;
-    .footer-h2 {
-        margin-bottom: 30px;
-    }
     .footer-p {
         margin-bottom: 20px;
     }

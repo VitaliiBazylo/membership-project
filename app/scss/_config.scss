@@ -44,9 +44,34 @@ $theme-colors: (
 }
 
 
+
 @include font('Ubuntu', normal, 300, '../fonts/ubuntu-latin-regular.woff2');
 @include font('Lato', normal, 300, '../fonts/lato-regular.woff2');
 // GENERAL DOCUMENT STYLES
+.my-h1{
+	font-size: 60px;
+	@media screen and (max-width: 900px){
+		font-size: 30px;	
+	}
+}
+.my-h2{
+	font-size: 48px;
+	@media screen and (max-width: 900px){
+		font-size: 24px;	
+	}
+}
+.my-h3{
+	font-size: 30px;
+	@media screen and (max-width: 900px){
+		font-size: 15px;	
+	}
+}
+.text{
+	font-size: 14px;
+	@media screen and (max-width: 900px){
+		font-size: 10px;	
+	}
+}
 
 ::placeholder {
 	color: #666;
