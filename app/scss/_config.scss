@@ -40,7 +40,6 @@ $theme-colors: (
 	text-transform: uppercase;
 	font-weight: bold;
 	text-decoration: none;
-	outline: none;
 }
 
 
@@ -69,7 +68,7 @@ $theme-colors: (
 .text{
 	font-size: 14px;
 	@media screen and (max-width: 900px){
-		font-size: 10px;	
+		font-size: 1px;	
 	}
 }
 
@@ -99,7 +98,7 @@ body {
 }
 
 .my-navbar-toggler {
-	padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+	padding: 0;
 	@include font-size($navbar-toggler-font-size);
 	line-height: 1;
 	background-color: transparent;
@@ -113,6 +112,7 @@ body {
 	display: inline-block;
 	width: 2.5em;
 	height: 2.5em;
+
 	vertical-align: middle;
 	content: "";
 	background: no-repeat center center;

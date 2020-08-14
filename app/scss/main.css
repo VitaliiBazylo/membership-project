@@ -11196,7 +11196,7 @@ a.text-main-dark:hover, a.text-main-dark:focus {
 
 @media screen and (max-width: 900px) {
   .text {
-    font-size: 10px;
+    font-size: 1px;
   }
 }
 
@@ -11249,7 +11249,7 @@ body {
 }
 
 .my-navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 0;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -11325,17 +11325,24 @@ body {
 
 * {
   font-family: "Ubuntu";
+  outline: none !important;
 }
 
-.navbar {
+.container {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.header .navbar .navbar-collapse .navbar-nav .nav-item {
   font-weight: bold;
 }
 
-.navbar .link__text {
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link .link-text {
   color: #333333;
 }
 
-.navbar .order__button {
+.header .navbar .navbar-collapse .navbar-nav .menu__order .order .order__button {
   border: none;
   padding: 15px 50px;
   background-color: white;
@@ -11344,16 +11351,9 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  outline: none;
 }
 
-.container {
-  margin: 0;
-  width: 100px;
-  text-align: center;
-}
-
-.header__title {
+.header .header__title {
   width: 100%;
   height: 900px;
   background-color: #ebecee;
@@ -11361,19 +11361,18 @@ body {
   position: relative;
 }
 
-.header__title .title {
+.header .header__title .title {
   text-align: center;
   position: absolute;
   top: 410px;
 }
 
-.header__title .title .title-text {
+.header .header__title .title .title-text {
   color: #222222;
-  font-weight: 300;
   margin-bottom: 60px;
 }
 
-.header__title .title .title__button {
+.header .header__title .title .title__button {
   border: none;
   padding: 15px 50px;
   background-color: white;
@@ -11382,105 +11381,51 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  outline: none;
 }
 
-.about__header {
-  max-width: 1200px;
+.main .about .about__header {
   margin-bottom: 140px;
 }
 
-.about__header .about__title {
+.main .about .about__header .about__title {
   padding-top: 100px;
 }
 
-.about__header .about__title .about__title-text {
+.main .about .about__header .about__title .about__title-text {
   padding: 35px;
 }
 
-.about__header .grid__item-text {
+.main .about .about__grid .grid__item-text {
   height: 400px;
 }
 
-.about__header .grid__item-text .grid-h2::after {
+.main .about .about__grid .grid__item-text .grid-h2::after {
   width: 40px;
   border-bottom: 2px solid #000;
   margin-bottom: 20px;
 }
 
-.about__header .goal-top {
-  background-image: url("/img/space.png");
+.main .about .about__demo .demo__block .demo-img {
+  width: 90%;
 }
 
-.about__header .goal-bottom {
-  background-image: url("/img/space.png");
-  background-repeat: no-repeat;
-  background-position: 0 -400px;
-  color: #ffffff;
-}
-
-.about__header .goal-bottom .underline {
-  border-bottom: 2px solid #ffffff;
-}
-
-.grid__item-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.grid__item-img .girl {
-  background-image: url("/img/girl.png");
-}
-
-.grid__item-img .comunity {
-  background-image: url("/img/comunity.png");
-}
-
-.grid__item-img .cup {
-  background-image: url("/img/cup.png");
-  background-repeat: no-repeat;
-  background-size: 310px 370px;
-  background-position: 50% 30px;
-}
-
-.demo__block {
-  padding: 180px 0;
-}
-
-.demo-img {
-  width: 100%;
-}
-
-.demo__title {
+.main .about .about__demo .demo__block .demo__title {
   padding: 0 100px;
 }
 
-.description__icon {
-  background-image: url("/img/demo-icon.svg");
-  background-repeat: no-repeat;
-  width: 75px;
-  height: 75px;
-}
-
-.description-item {
+.main .about .about__demo .demo__block .demo__title .demo__title-description .description-item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.voice {
-  background-position: 0 0;
+.main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description__icon {
+  width: 50px;
+  height: 50px;
+  fill: #c89d28;
 }
 
-.music {
-  background-position: 0 -135px;
-}
-
-.water {
-  background-position: 0 -270px;
-}
-
-.description-button {
+.main .about .about__demo .demo__block .demo__title .description-button {
   border: none;
   padding: 15px 50px;
   background-color: white;
@@ -11489,28 +11434,26 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  outline: none;
-  width: 264px;
+  width: 100%;
   background-color: #e5e1e1;
 }
 
-.about__price {
+.main .about .about__price {
   background-image: url("/img/price-bg.png");
   background-repeat: no-repeat;
   background-color: #0f0f0f;
-  padding: 250px 0px;
-}
-
-.about__price {
   color: white;
 }
 
-.price__item,
-.price__title {
+.main .about .about__price .price__title {
   margin-bottom: 100px;
 }
 
-.price-title {
+.main .about .about__price .price__group .price__item {
+  margin-bottom: 150px;
+}
+
+.main .about .about__price .price__group .price__item .item__title {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -11521,22 +11464,22 @@ body {
   text-align: center;
 }
 
-.price-currency {
+.main .about .about__price .price__group .price__item .item__title .price-currency {
   padding-top: 15px;
   font-size: 30px;
   font-family: 'Lato', sans-serif;
 }
 
-.price-value {
+.main .about .about__price .price__group .price__item .item__title .price-value {
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
-.price-p {
+.main .about .about__price .price__group .price__item .price-p {
   padding: 40px 90px;
 }
 
-.price-button {
+.main .about .about__price .price__group .price__item .price-button {
   border: none;
   padding: 15px 50px;
   background-color: white;
@@ -11545,36 +11488,23 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  outline: none;
-  width: 250px;
 }
 
-.about__news {
+.main .about .about__news {
   background-color: #e8e9ea;
   padding: 100px 50px;
 }
 
-.news__block-img {
-  width: 100%;
-  height: 67%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.news__block-top {
+.main .about .about__news .news-container .news__block-top {
   position: relative;
   margin-bottom: 60px;
 }
 
-.news__block-top .news__block-img {
-  height: 100%;
+.main .about .about__news .news-container .news__block-top .news__block-img {
+  width: 100%;
 }
 
-.news__subblock {
-  position: relative;
-}
-
-.news__block-title {
+.main .about .about__news .news-container .news__block-top .news__block-title {
   position: absolute;
   top: 50%;
   font-size: 30px;
@@ -11585,32 +11515,7 @@ body {
   padding: 0 80px;
 }
 
-.news-label {
-  position: absolute;
-  top: 15px;
-  left: 25px;
-}
-
-.lebel-text {
-  border: none;
-  padding: 15px 50px;
-  background-color: white;
-  text-align: center;
-  border-radius: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  outline: none;
-  padding: 15px 25px;
-  background-color: #8d7431;
-  font-size: 10px;
-  color: #ffffff;
-  font-weight: 700;
-  font-family: "Ubuntu";
-  text-align: center;
-}
-
-.news__block-p {
+.main .about .about__news .news-container .news__block-top .news__block-title .news__block-p {
   font-size: 11px;
   letter-spacing: 1px;
   color: #cccccc;
@@ -11620,15 +11525,11 @@ body {
   text-transform: uppercase;
 }
 
-.news-author {
+.main .about .about__news .news-container .news__block-top .news__block-title .news__block-p .news-author {
   color: #c89d28;
 }
 
-.news__block-text {
-  padding: 25px 0;
-}
-
-.news__button {
+.main .about .about__news .news-container .news__block-top .news-label .lebel-text {
   border: none;
   padding: 15px 50px;
   background-color: white;
@@ -11637,29 +11538,74 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  outline: none;
-  width: 270px;
+  padding: 15px 25px;
+  background-color: #8d7431;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  text-align: center;
 }
 
-.about__privilege {
-  padding: 0 5%;
+.main .about .about__news .news-container .news__block .news__block-container .news__subblock {
+  position: relative;
 }
 
-.privilege-h3 {
+.main .about .about__news .news-container .news__block .news__block-container .news__subblock .news__block-img {
+  width: 100%;
+  height: 67%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .about .about__news .news-container .news__block .news__block-container .news__subblock .news__block-text {
+  padding: 25px 0;
+}
+
+.main .about .about__news .news-container .news__block .news__block-container .news__subblock .news-label {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+
+.main .about .about__news .news-container .news__block .news__block-container .news__subblock .news-label .lebel-text {
+  border: none;
+  padding: 15px 50px;
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: #8d7431;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  text-align: center;
+}
+
+.main .about .about__news .news__button {
+  border: none;
+  padding: 15px 50px;
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  max-width: 270px;
+}
+
+.main .about .about__privilege .privilege__item .privilege .privilege__title .privilege-h3 {
   font-size: 30px;
   color: #000000;
   font-weight: 300;
   font-family: "Ubuntu";
 }
 
-.privilege-icon {
-  width: 50px;
-  height: 50px;
-  fill: #c79d27;
-}
-
-.privilege-p {
-  width: 294px;
+.main .about .about__privilege .privilege__item .privilege .privilege__title .privilege-p {
   height: 283px;
   font-size: 22px;
   line-height: 22px;
@@ -11668,37 +11614,48 @@ body {
   font-family: "Ubuntu";
 }
 
-.about__facts {
+.main .about .about__privilege .privilege__item .item-container .privilege__subitem .privilege .privilege__title .privilege-icon {
+  width: 50px;
+  height: 50px;
+  fill: #c79d27;
+}
+
+.main .about .about__privilege .privilege__item .item-container .privilege__subitem .privilege .privilege__title .privilege-text .privilege-h3 {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Ubuntu";
+}
+
+.main .about .about__privilege .privilege__item .item-container .privilege__subitem .privilege .privilege__title .privilege-text .privilege-p {
+  height: 283px;
+  font-size: 22px;
+  line-height: 22px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Ubuntu";
+}
+
+.main .about .about__facts {
   background-image: url("/img/price-bg.png");
   background-repeat: no-repeat;
   background-color: #0f0f0f;
-  padding: 250px 0px;
-}
-
-.facts__group {
-  padding: 0 150px;
-}
-
-.about__facts {
   color: white;
 }
 
-.facts__item,
-.facts__title {
+.main .about .about__facts .facts__title {
   margin-bottom: 100px;
 }
 
-.facts__title {
+.main .about .about__facts .facts__group {
+  padding: 0 150px;
+}
+
+.main .about .about__facts .facts__group .facts__item .facts-title {
   font-size: 48px;
 }
 
-.facts-currency {
-  padding-top: 15px;
-  font-size: 30px;
-  font-family: 'Lato', sans-serif;
-}
-
-.facts-value {
+.main .about .about__facts .facts__group .facts__item .facts-title .facts-value {
   font-size: 64px;
   color: #c89d28;
   font-family: 'Lato', sans-serif;
@@ -11706,11 +11663,11 @@ body {
   font-weight: 100;
 }
 
-.facts-text {
+.main .about .about__facts .facts__group .facts__item .facts-title .facts-text {
   font-size: 18px;
 }
 
-.facts__h3 {
+.main .about .about__facts .facts__h3 {
   max-width: 811px;
   font-size: 24px;
   color: #999999;
@@ -11720,57 +11677,54 @@ body {
   padding: 0 25px;
 }
 
-.about__reviews {
+.main .about .about__reviews {
   padding: 70px 0;
 }
 
-.reviews__icons {
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-.icons-item {
-  width: 15%;
-  height: 15%;
-  padding: 0 4%;
-}
-
-.reviews__h2 {
+.main .about .about__reviews .reviews__h3 {
   font-size: 30px;
   color: #333333;
   font-weight: 300;
   padding: 150px 0 80px 0;
 }
 
-.reviews__comment {
+.main .about .about__reviews .carousel .carousel-inner .carousel-item .reviews__icons {
+  margin: 0 auto;
+}
+
+.main .about .about__reviews .carousel .carousel-inner .carousel-item .reviews__icons .icons-item {
+  width: 50px;
+  height: 50px;
+}
+
+.main .about .about__reviews .carousel .carousel-inner .reviews__comment {
   padding-top: 120px;
-  max-width: 709px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.comment-text {
+.main .about .about__reviews .carousel .carousel-inner .reviews__comment .comment-text {
   height: 127px;
   font-size: 22px;
   line-height: 27px;
   color: #333333;
 }
 
-.comment-author {
+.main .about .about__reviews .carousel .carousel-inner .reviews__comment .comment-from .comment-author {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.comment-place {
+.main .about .about__reviews .carousel .carousel-inner .reviews__comment .comment-from .comment-place {
   color: #999999;
 }
 
-.reviews__control-block {
+.main .about .about__reviews .carousel .reviews__control-block {
   padding: 50px 0;
 }
 
-.footer__title {
+.footer .footer__title {
   height: 430px;
   padding: 120px 0;
   background-image: url("/img/footer-title.png");
@@ -11778,11 +11732,11 @@ body {
   color: #ffffff;
 }
 
-.footer__title .footer-p {
+.footer .footer__title .footer-p {
   margin-bottom: 20px;
 }
 
-.footer__title .footer-button {
+.footer .footer__title .footer-button {
   border: none;
   padding: 15px 50px;
   background-color: white;
@@ -11791,66 +11745,44 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  outline: none;
 }
 
-.footer__contacts {
+.footer .footer__contacts {
   color: #ffffff;
   background-color: #0d0d0d;
   padding: 120px 0;
 }
 
-.footer__contacts .contacts__social {
+.footer .footer__contacts .contacts__social {
   padding-top: 70px;
-  max-width: 500px;
 }
 
-.footer__contacts .contacts__social .social-h2,
-.footer__contacts .contacts__social .services-h2 {
+.footer .footer__contacts .contacts__social .social-h2 {
   margin-bottom: 42px;
   text-transform: uppercase;
 }
 
-.footer__contacts .contacts__social .social-p {
+.footer .footer__contacts .contacts__social .social-p {
   margin-bottom: 30px;
   color: #666666;
 }
 
-.footer__contacts .contacts__social .social-icons .social-link {
+.footer .footer__contacts .contacts__social .services-h2 {
+  margin-bottom: 42px;
+  text-transform: uppercase;
+}
+
+.footer .footer__contacts .contacts__social .social-icons .social-link {
   padding-right: 30px;
 }
 
-.footer__contacts .contacts__social .social-icons .social-link .social-img {
+.footer .footer__contacts .contacts__social .social-icons .social-link .social-icon {
   width: 20px;
   height: 20px;
   fill: #ffffff;
-  color: #ffffff;
-  background-color: #ffffff;
 }
 
-.footer__contacts .contacts__services {
-  padding-top: 70px;
-  max-width: 500px;
-}
-
-.footer__contacts .contacts__services .servisec-block .contacts__services {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.footer__contacts .contacts__services .servisec-block .contacts__services .services-link .services-text {
-  color: #ffffff;
-}
-
-.footer__contacts .contacts__services .servisec-block .contacts__services .services-link :hover {
-  text-decoration: none;
-}
-
-.footer__signature {
+.footer .footer__contacts .contacts__social .footer__signature {
   margin-top: 150px;
   color: #ffffff;
   display: -webkit-inline-box;
@@ -11859,16 +11791,23 @@ body {
   text-transform: uppercase;
 }
 
-.footer__signature .signature-link {
+.footer .footer__contacts .contacts__social .footer__signature .signature-link {
   color: #c89d28;
 }
 
-.footer__signature .signature-link :hover {
+.footer .footer__contacts .contacts__social .footer__signature .signature-link:hover {
   text-decoration: none;
-  color: #6b5416;
 }
 
-.feature {
-  fill: #c89d28;
+.footer .footer__contacts .contacts__services {
+  padding-top: 70px;
+}
+
+.footer .footer__contacts .contacts__services .servisec-block .services-link .services-text {
+  color: #ffffff;
+}
+
+.footer .footer__contacts .contacts__services .servisec-block .services-link:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
