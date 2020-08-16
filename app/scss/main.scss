@@ -44,7 +44,6 @@
             top:410px;
             .title-text {
                 color: #222222;
-                
                 margin-bottom: 60px;
             }
             .title__button {
@@ -58,7 +57,7 @@
 .main {
     .about {
         .about__header {
-            // max-width: 1200px;
+            // max-width: 200px;
             margin-bottom: 140px;
             .about__title {
                 padding-top: 100px;
@@ -66,6 +65,13 @@
                     padding: 35px;
                 }
             } 
+            .about__header-group{
+                .about__header-article{
+                    .article-img{
+                        width: 100%;
+                    }
+                }
+            }
         }
         .about__grid {
             .grid__item-text {
@@ -76,15 +82,15 @@
                     margin-bottom: 20px;
                 }
             }
-            .grid__item-img {
+            // .grid__item-img {
                 
-            } 
-            .goal-top {
+            // } 
+            // .goal-top {
                 
-            }
-            .goal-bottom {
+            // }
+            // .goal-bottom {
                 
-            } 
+            // } 
         }
         .about__demo {
             .demo__block {
@@ -153,7 +159,7 @@
         }
         .about__news {
             background-color: #e8e9ea;
-            padding: 100px 50px;
+            // padding: 100px 50px;
             .news-container {
                 .news__block-top {
                     position: relative;
@@ -229,7 +235,7 @@
             }
             .news__button {
                 @include main-button;
-                max-width: 270px;
+                // max-width: 270px;
             } 
         }
         .about__privilege {
@@ -311,7 +317,7 @@
                 }
             }
             .facts__h3 {
-                max-width: 811px;
+                // max-width: 811px;
                 font-size: 24px;
                 color: #999999;
                 font-weight: 300;

@@ -11241,7 +11241,6 @@ input:required:valid, textarea:required:valid {
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  min-width: 320px;
   position: relative;
   line-height: 1.65;
   overflow-x: hidden;
@@ -11395,6 +11394,10 @@ body {
   padding: 35px;
 }
 
+.main .about .about__header .about__header-group .about__header-article .article-img {
+  width: 100%;
+}
+
 .main .about .about__grid .grid__item-text {
   height: 400px;
 }
@@ -11492,7 +11495,6 @@ body {
 
 .main .about .about__news {
   background-color: #e8e9ea;
-  padding: 100px 50px;
 }
 
 .main .about .about__news .news-container .news__block-top {
@@ -11595,7 +11597,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  max-width: 270px;
 }
 
 .main .about .about__privilege .privilege__item .privilege .privilege__title .privilege-h3 {
@@ -11668,7 +11669,6 @@ body {
 }
 
 .main .about .about__facts .facts__h3 {
-  max-width: 811px;
   font-size: 24px;
   color: #999999;
   font-weight: 300;
