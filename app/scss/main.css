@@ -545,8 +545,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -577,8 +577,8 @@ pre code {
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -613,8 +613,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .no-gutters {
@@ -636,8 +636,8 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .col {
@@ -5390,7 +5390,7 @@ input[type="button"].btn-block {
 }
 
 .card-deck .card {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 576px) {
@@ -5402,21 +5402,21 @@ input[type="button"].btn-block {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin-right: -10px;
-    margin-left: -10px;
+    margin-right: -15px;
+    margin-left: -15px;
   }
   .card-deck .card {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 0%;
             flex: 1 0 0%;
-    margin-right: 10px;
+    margin-right: 15px;
     margin-bottom: 0;
-    margin-left: 10px;
+    margin-left: 15px;
   }
 }
 
 .card-group > .card {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 576px) {
@@ -11186,7 +11186,7 @@ a.text-main-dark:hover, a.text-main-dark:focus {
 
 @media screen and (max-width: 900px) {
   .my-h3 {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
@@ -11327,10 +11327,34 @@ body {
   outline: none !important;
 }
 
-.container {
-  margin: 0;
+.my-container {
+  margin: 0 auto;
+  padding: 0 auto;
   width: 100%;
+  max-width: 1210px;
   text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .my-container {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .my-container {
+    padding: 0;
+  }
+}
+
+.gutter-2.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.gutter-2 > [class^="col-"], .gutter-2 > [class^=" col-"] {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .header .navbar .navbar-collapse .navbar-nav .nav-item {
@@ -11409,11 +11433,32 @@ body {
 }
 
 .main .about .about__demo .demo__block .demo-img {
-  width: 90%;
+  width: 100%;
 }
 
 .main .about .about__demo .demo__block .demo__title {
-  padding: 0 100px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 400px) {
+  .main .about .about__demo .demo__block .demo__title {
+    padding: 0;
+  }
+}
+
+.main .about .about__demo .demo__block .demo__title .demo__title-p {
+  padding: 25px 0;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 400px) {
+  .main .about .about__demo .demo__block .demo__title .demo__title-p {
+    font-size: 14px;
+  }
+}
+
+.main .about .about__demo .demo__block .demo__title .demo__title-description {
+  margin-bottom: 60px;
 }
 
 .main .about .about__demo .demo__block .demo__title .demo__title-description .description-item {
@@ -11423,9 +11468,22 @@ body {
 }
 
 .main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description__icon {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   fill: #c89d28;
+}
+
+.main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description-title {
+  padding: 0 30px;
+}
+
+.main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description-title .description-h3 {
+  font-weight: 400;
+}
+
+.main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description-title .description-p {
+  font-size: 14px;
+  padding: 15px 0;
 }
 
 .main .about .about__demo .demo__block .demo__title .description-button {
@@ -11438,6 +11496,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   width: 100%;
+  max-width: 270px;
   background-color: #e5e1e1;
 }
 
@@ -11479,7 +11538,7 @@ body {
 }
 
 .main .about .about__price .price__group .price__item .price-p {
-  padding: 40px 90px;
+  padding: 40px 10px;
 }
 
 .main .about .about__price .price__group .price__item .price-button {
@@ -11599,42 +11658,36 @@ body {
   text-decoration: none;
 }
 
-.main .about .about__privilege .privilege__item .privilege .privilege__title .privilege-h3 {
-  font-size: 30px;
+.main .about .about__privilege .privilege__desription .privilege__title .privilege-h3 {
   color: #000000;
-  font-weight: 300;
-  font-family: "Ubuntu";
 }
 
-.main .about .about__privilege .privilege__item .privilege .privilege__title .privilege-p {
-  height: 283px;
-  font-size: 22px;
+.main .about .about__privilege .privilege__desription .privilege__title .privilege-p {
+  font-size: 16px;
   line-height: 22px;
   color: #000000;
-  font-weight: 400;
   font-family: "Ubuntu";
 }
 
-.main .about .about__privilege .privilege__item .item-container .privilege__subitem .privilege .privilege__title .privilege-icon {
+.main .about .about__privilege .privilege__items .privilege .privilege__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .about .about__privilege .privilege__items .privilege .privilege__title .privilege-icon .privilege-svg {
   width: 50px;
   height: 50px;
   fill: #c79d27;
 }
 
-.main .about .about__privilege .privilege__item .item-container .privilege__subitem .privilege .privilege__title .privilege-text .privilege-h3 {
-  font-size: 30px;
+.main .about .about__privilege .privilege__items .privilege .privilege__title .privilege-text .privilege-h3 {
   color: #000000;
-  font-weight: 300;
-  font-family: "Ubuntu";
 }
 
-.main .about .about__privilege .privilege__item .item-container .privilege__subitem .privilege .privilege__title .privilege-text .privilege-p {
-  height: 283px;
-  font-size: 22px;
-  line-height: 22px;
+.main .about .about__privilege .privilege__items .privilege .privilege__title .privilege-text .privilege-p {
+  font-size: 16px;
   color: #000000;
-  font-weight: 400;
-  font-family: "Ubuntu";
 }
 
 .main .about .about__facts {
@@ -11650,6 +11703,12 @@ body {
 
 .main .about .about__facts .facts__group {
   padding: 0 150px;
+}
+
+@media screen and (max-width: 400px) {
+  .main .about .about__facts .facts__group {
+    padding: 0;
+  }
 }
 
 .main .about .about__facts .facts__group .facts__item .facts-title {
@@ -11669,7 +11728,6 @@ body {
 }
 
 .main .about .about__facts .facts__h3 {
-  font-size: 24px;
   color: #999999;
   font-weight: 300;
   text-align: center;
@@ -11682,7 +11740,6 @@ body {
 }
 
 .main .about .about__reviews .reviews__h3 {
-  font-size: 30px;
   color: #333333;
   font-weight: 300;
   padding: 150px 0 80px 0;
@@ -11732,7 +11789,7 @@ body {
   color: #ffffff;
 }
 
-.footer .footer__title .footer-p {
+.footer .footer__title .footer-h3 {
   margin-bottom: 20px;
 }
 

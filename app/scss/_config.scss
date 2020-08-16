@@ -8,7 +8,7 @@ $roboto: Roboto, sans-serif; // Roboto Font Family
 
 
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 20px;
+$grid-gutter-width: 30px;
 $gutter: $grid-gutter-width;
 $theme-colors: (
   "main-light": #ebecee,
@@ -62,7 +62,7 @@ $theme-colors: (
 .my-h3{
 	font-size: 30px;
 	@media screen and (max-width: 900px){
-		font-size: 15px;	
+		font-size: 20px;	
 	}
 }
 .text{
@@ -156,3 +156,5 @@ body {
   .my-carousel-control-next-icon {
 	background-image: url(/svg/next-icon.svg);
   } 
+
+
