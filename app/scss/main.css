@@ -11335,15 +11335,9 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .my-container {
-    padding: 0 50px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .my-container {
-    padding: 0;
+    padding: 0 10px;
   }
 }
 
@@ -11355,6 +11349,10 @@ body {
 .gutter-2 > [class^="col-"], .gutter-2 > [class^=" col-"] {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+.header .navbar .navbar-collapse {
+  padding-left: 6px;
 }
 
 .header .navbar .navbar-collapse .navbar-nav .nav-item {
@@ -11376,23 +11374,44 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 992px) {
+  .header .navbar .navbar-collapse .navbar-nav .menu__order .order .order__button {
+    width: 100%;
+  }
+}
+
 .header .header__title {
   width: 100%;
   height: 900px;
   background-color: #ebecee;
   background-image: url("/img/title-background.png");
+  background-size: auto 100%;
   position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .header .header__title {
+    height: 380px;
+  }
 }
 
 .header .header__title .title {
   text-align: center;
   position: absolute;
-  top: 410px;
+  top: 360px;
+  padding-left: 120px;
+}
+
+@media screen and (max-width: 992px) {
+  .header .header__title .title {
+    top: 80px;
+    padding-left: 20px;
+  }
 }
 
 .header .header__title .title .title-text {
   color: #222222;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .header .header__title .title .title__button {
@@ -11407,14 +11426,14 @@ body {
 }
 
 .main .about .about__header {
-  margin-bottom: 140px;
-}
-
-.main .about .about__header .about__title {
-  padding-top: 100px;
+  padding: 90px 0;
 }
 
 .main .about .about__header .about__title .about__title-text {
+  padding: 35px;
+}
+
+.main .about .about__header .about__header-group .about__header-article .article-title {
   padding: 35px;
 }
 
@@ -11430,6 +11449,28 @@ body {
   width: 40px;
   border-bottom: 2px solid #000;
   margin-bottom: 20px;
+}
+
+.main .about .about__grid .grid__item-img {
+  background-repeat: no-repeat;
+  -webkit-text-decoration: inv;
+          text-decoration: inv;
+}
+
+.main .about .about__grid .girl {
+  background-image: url(/img/girl.png);
+}
+
+.main .about .about__grid .comunity {
+  background-image: url(/img/comunity.png);
+}
+
+.main .about .about__grid .goal-top {
+  background-image: url(/img/space.png);
+}
+
+.main .about .about__grid .cup {
+  background-image: url(/img/cup.png);
 }
 
 .main .about .about__demo .demo__block .demo-img {

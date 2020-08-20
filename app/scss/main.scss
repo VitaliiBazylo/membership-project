@@ -10,11 +10,8 @@
     width: 100%;
     max-width: 1210px;
     text-align: center;
-    @media screen and (max-width: 900px){
-        padding: 0 50px;
-    }
-    @media screen and (max-width: 380px){
-        padding: 0;
+    @media screen and (max-width: 992px){
+        padding: 0 10px;
     }
 }
 .gutter-2.row {
@@ -30,6 +27,7 @@
 //// navbar /////////
     .navbar {
         .navbar-collapse {
+            padding-left: 6px;
             .navbar-nav {
                 .nav-item {
                     font-weight: bold;
@@ -43,6 +41,9 @@
                     .order {
                         .order__button {
                             @include main-button;
+                            @media screen and (max-width: 992px){
+                                width: 100%;
+                            }
                         }  
                     }   
                 }
@@ -55,14 +56,24 @@
         height: 900px;
         background-color: rgb(235, 236, 238);
         background-image: url("/img/title-background.png");
-        position: relative; 
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        @media screen and (max-width: 992px){
+            height: 380px;
+        }
         .title {
             text-align: center;
             position: absolute;
-            top:410px;
+            top:360px;
+            padding-left: 120px;
+            @media screen and (max-width: 992px){
+                top:80px;
+                padding-left: 20px;
+            }
             .title-text {
                 color: #222222;
-                margin-bottom: 60px;
+                margin-bottom: 50px;
             }
             .title__button {
                 @include main-button;  
@@ -76,16 +87,18 @@
     .about { 
 //////// about__header /////////
         .about__header {  
-            // max-width: 200px;
-            margin-bottom: 140px;
+            padding: 90px 0;
+            // margin-bottom: 140px;
             .about__title {
-                padding-top: 100px;
                 .about__title-text {
                     padding: 35px;
                 }
             } 
             .about__header-group{
                 .about__header-article{
+                    .article-title{
+                        padding: 35px;
+                    }
                     .article-img{
                         width: 100%;
                     }
@@ -94,23 +107,33 @@
         }
 //////// about__grid /////////
         .about__grid { 
-            .grid__item-text {
+            .grid__item{
                 height: 400px;
+            }
+            .grid__item-text {
                 .grid-h2::after {
                     width: 40px;
                     border-bottom: 2px solid #000;
                     margin-bottom: 20px;
                 }
             }
-            // .grid__item-img {
-                
-            // } 
-            // .goal-top {
-                
-            // }
-            // .goal-bottom {
-                
-            // } 
+            .grid__item-img{
+                background-repeat: no-repeat;
+                text-decoration;
+            }
+            .girl{
+                background-image: url(/img/girl.png);
+            }
+            .comunity{
+                background-image: url(/img/comunity.png);
+            }
+            .goal-top{
+                background-image: url(/img/space.png);
+            }
+            .cup{
+                background-image: url(/img/cup.png);
+            }
+            
         }
 //////// about__demo /////////
         .about__demo {
