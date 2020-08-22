@@ -11164,7 +11164,7 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-size: 60px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .my-h1 {
     font-size: 30px;
   }
@@ -11174,7 +11174,7 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-size: 48px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .my-h2 {
     font-size: 24px;
   }
@@ -11184,7 +11184,7 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-size: 30px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .my-h3 {
     font-size: 20px;
   }
@@ -11194,7 +11194,7 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-size: 14px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .text {
     font-size: 1px;
   }
@@ -11367,11 +11367,14 @@ body {
   border: none;
   padding: 15px 50px;
   background-color: white;
-  text-align: center;
   border-radius: 30px;
   text-transform: uppercase;
-  font-weight: bold;
   text-decoration: none;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  text-align: center;
 }
 
 @media screen and (max-width: 992px) {
@@ -11385,7 +11388,8 @@ body {
   height: 900px;
   background-color: #ebecee;
   background-image: url("/img/title-background.png");
-  background-size: auto 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -11418,11 +11422,14 @@ body {
   border: none;
   padding: 15px 50px;
   background-color: white;
-  text-align: center;
   border-radius: 30px;
   text-transform: uppercase;
-  font-weight: bold;
   text-decoration: none;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  text-align: center;
 }
 
 .main .about .about__header {
@@ -11441,7 +11448,7 @@ body {
   width: 100%;
 }
 
-.main .about .about__grid .grid__item-text {
+.main .about .about__grid .grid__item {
   height: 400px;
 }
 
@@ -11453,8 +11460,8 @@ body {
 
 .main .about .about__grid .grid__item-img {
   background-repeat: no-repeat;
-  -webkit-text-decoration: inv;
-          text-decoration: inv;
+  background-size: cover;
+  text-decoration: none;
 }
 
 .main .about .about__grid .girl {
@@ -11471,6 +11478,16 @@ body {
 
 .main .about .about__grid .cup {
   background-image: url(/img/cup.png);
+}
+
+.main .about .about__demo {
+  padding: 183px 0 230px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .main .about .about__demo {
+    padding: 150px 0;
+  }
 }
 
 .main .about .about__demo .demo__block .demo-img {
@@ -11527,15 +11544,18 @@ body {
   padding: 15px 0;
 }
 
-.main .about .about__demo .demo__block .demo__title .description-button {
+.main .about .about__demo .demo__block .description-button {
   border: none;
   padding: 15px 50px;
   background-color: white;
-  text-align: center;
   border-radius: 30px;
   text-transform: uppercase;
-  font-weight: bold;
   text-decoration: none;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  text-align: center;
   width: 100%;
   max-width: 270px;
   background-color: #e5e1e1;
@@ -11545,7 +11565,14 @@ body {
   background-image: url("/img/price-bg.png");
   background-repeat: no-repeat;
   background-color: #0f0f0f;
+  padding: 240px 0 315px 0;
   color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .main .about .about__price {
+    padding: 150px 0;
+  }
 }
 
 .main .about .about__price .price__title {
@@ -11586,15 +11613,55 @@ body {
   border: none;
   padding: 15px 50px;
   background-color: white;
-  text-align: center;
   border-radius: 30px;
   text-transform: uppercase;
-  font-weight: bold;
   text-decoration: none;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  text-align: center;
+  width: 207px;
 }
 
 .main .about .about__news {
   background-color: #e8e9ea;
+  padding: 140px 0 115px 0;
+}
+
+.main .about .about__news .news-h2 {
+  padding-bottom: 67px;
+}
+
+.main .about .about__news .news-label {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+
+.main .about .about__news .news-label .lebel-text {
+  border: none;
+  padding: 15px 50px;
+  background-color: white;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  text-align: center;
+  padding: 15px 25px;
+  background-color: #8d7431;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  text-align: center;
+}
+
+.main .about .about__news .news-container {
+  margin-bottom: 60px;
 }
 
 .main .about .about__news .news-container .news__block-top {
@@ -11602,13 +11669,21 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 992px) {
+  .main .about .about__news .news-container .news__block-top {
+    padding-bottom: 100px;
+  }
+}
+
 .main .about .about__news .news-container .news__block-top .news__block-img {
+  background-image: url(/img/wordpress.png);
   width: 100%;
+  min-height: 600px;
 }
 
 .main .about .about__news .news-container .news__block-top .news__block-title {
   position: absolute;
-  top: 50%;
+  top: 280px;
   font-size: 30px;
   color: #ffffff;
   font-weight: 300;
@@ -11631,26 +11706,14 @@ body {
   color: #c89d28;
 }
 
-.main .about .about__news .news-container .news__block-top .news-label .lebel-text {
-  border: none;
-  padding: 15px 50px;
-  background-color: white;
-  text-align: center;
-  border-radius: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 15px 25px;
-  background-color: #8d7431;
-  font-size: 10px;
-  color: #ffffff;
-  font-weight: 700;
-  font-family: "Ubuntu";
-  text-align: center;
-}
-
 .main .about .about__news .news-container .news__block .news__block-container .news__subblock {
   position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .main .about .about__news .news-container .news__block .news__block-container .news__subblock {
+    padding-bottom: 100px;
+  }
 }
 
 .main .about .about__news .news-container .news__block .news__block-container .news__subblock .news__block-img {
@@ -11664,56 +11727,53 @@ body {
   padding: 25px 0;
 }
 
-.main .about .about__news .news-container .news__block .news__block-container .news__subblock .news-label {
-  position: absolute;
-  top: 15px;
-  left: 25px;
-}
-
-.main .about .about__news .news-container .news__block .news__block-container .news__subblock .news-label .lebel-text {
+.main .about .about__news .news__button {
   border: none;
   padding: 15px 50px;
   background-color: white;
-  text-align: center;
   border-radius: 30px;
   text-transform: uppercase;
-  font-weight: bold;
   text-decoration: none;
-  padding: 15px 25px;
-  background-color: #8d7431;
-  font-size: 10px;
-  color: #ffffff;
+  font-size: 14px;
+  color: #333333;
   font-weight: 700;
   font-family: "Ubuntu";
   text-align: center;
 }
 
-.main .about .about__news .news__button {
-  border: none;
-  padding: 15px 50px;
-  background-color: white;
-  text-align: center;
-  border-radius: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
+.main .about .about__privilege {
+  padding: 200px 0 100px 0;
 }
 
-.main .about .about__privilege .privilege__desription .privilege__title .privilege-h3 {
-  color: #000000;
+@media screen and (max-width: 992px) {
+  .main .about .about__privilege {
+    padding: 100px 0;
+  }
 }
 
-.main .about .about__privilege .privilege__desription .privilege__title .privilege-p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-  font-family: "Ubuntu";
+.main .about .about__privilege .privilege__description {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .main .about .about__privilege .privilege__description {
+    margin-bottom: 50px;
+  }
+}
+
+.main .about .about__privilege .privilege__items .privilege {
+  min-height: 200px;
+  margin-bottom: 55px;
 }
 
 .main .about .about__privilege .privilege__items .privilege .privilege__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main .about .about__privilege .privilege__items .privilege .privilege__title .privilege-icon {
+  padding-right: 29px;
 }
 
 .main .about .about__privilege .privilege__items .privilege .privilege__title .privilege-icon .privilege-svg {
@@ -11736,6 +11796,13 @@ body {
   background-repeat: no-repeat;
   background-color: #0f0f0f;
   color: white;
+  padding: 250px 0 345px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .main .about .about__facts {
+    padding: 150px 0;
+  }
 }
 
 .main .about .about__facts .facts__title {
@@ -11743,13 +11810,17 @@ body {
 }
 
 .main .about .about__facts .facts__group {
-  padding: 0 150px;
+  padding: 0 75px;
 }
 
 @media screen and (max-width: 400px) {
   .main .about .about__facts .facts__group {
     padding: 0;
   }
+}
+
+.main .about .about__facts .facts__group .facts__item {
+  margin-bottom: 122px;
 }
 
 .main .about .about__facts .facts__group .facts__item .facts-title {
@@ -11777,26 +11848,55 @@ body {
 }
 
 .main .about .about__reviews {
-  padding: 70px 0;
+  padding: 145px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .main .about .about__reviews {
+    padding: 75px 0;
+  }
 }
 
 .main .about .about__reviews .reviews__h3 {
   color: #333333;
   font-weight: 300;
-  padding: 150px 0 80px 0;
+  margin-bottom: 80px;
+}
+
+.main .about .about__reviews .carousel .carousel-inner {
+  margin-bottom: 55px;
 }
 
 .main .about .about__reviews .carousel .carousel-inner .carousel-item .reviews__icons {
-  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 135px;
+}
+
+@media screen and (max-width: 992px) {
+  .main .about .about__reviews .carousel .carousel-inner .carousel-item .reviews__icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .main .about .about__reviews .carousel .carousel-inner .carousel-item .reviews__icons .icons-item {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 992px) {
+  .main .about .about__reviews .carousel .carousel-inner .carousel-item .reviews__icons .icons-item {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .main .about .about__reviews .carousel .carousel-inner .reviews__comment {
-  padding-top: 120px;
+  max-width: 709px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11812,14 +11912,17 @@ body {
 .main .about .about__reviews .carousel .carousel-inner .reviews__comment .comment-from .comment-author {
   text-transform: uppercase;
   font-weight: bold;
+  padding-left: 80px;
+}
+
+@media screen and (max-width: 992px) {
+  .main .about .about__reviews .carousel .carousel-inner .reviews__comment .comment-from .comment-author {
+    padding: 0;
+  }
 }
 
 .main .about .about__reviews .carousel .carousel-inner .reviews__comment .comment-from .comment-place {
   color: #999999;
-}
-
-.main .about .about__reviews .carousel .reviews__control-block {
-  padding: 50px 0;
 }
 
 .footer .footer__title {
@@ -11838,11 +11941,14 @@ body {
   border: none;
   padding: 15px 50px;
   background-color: white;
-  text-align: center;
   border-radius: 30px;
   text-transform: uppercase;
-  font-weight: bold;
   text-decoration: none;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  text-align: center;
 }
 
 .footer .footer__contacts {
