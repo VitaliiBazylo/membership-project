@@ -58,9 +58,10 @@
         background-image: url("/img/title-background.png");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position-x: center;
         position: relative;
         @media screen and (max-width: 992px){
-            height: 380px;
+            height: 580px;
         }
         .title {
             text-align: center;
@@ -111,15 +112,30 @@
                 height: 400px;
             }
             .grid__item-text {
-                .grid-h2::after {
+                padding: 133px 144px;
+                background-color: #f8f8f8;
+                @media screen and (max-width: 992px){
+                    padding: 133px 30px;
+                }
+                .item-text{
+                    .grid-h2{
+                        margin-bottom: 20px;
+                    }
+                }
+                .grid-underline{ 
                     width: 40px;
                     border-bottom: 2px solid #000;
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }
             }
+            .is-sand{
+                background-color: #f4f0eb;
+            }
+            
             .grid__item-img{
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position-x: center;
                 text-decoration:none;
             }
             .girl{
@@ -130,9 +146,25 @@
             }
             .goal-top{
                 background-image: url(/img/space.png);
+                background-size: auto;
+
+
+            }
+            .goal-bottom{
+                color: #cccccc;
+                background-image: url(/img/space.png);
+                background-repeat: no-repeat;
+                background-position-y: -400px;
+                background-size: auto;
+
+                text-decoration:none;
+                .grid-underline{
+                    border-color: #cccccc;
+                }
             }
             .cup{
                 background-image: url(/img/cup.png);
+                background-size: auto 100%;
             }
             
         }
@@ -148,13 +180,13 @@
                 }
                 .demo__title {
                     max-width: 400px;
-                    @media screen and (max-width: 400px){
+                    @media screen and (max-width: 992px){
                         padding: 0;
                     }
                     .demo__title-p{
                         padding: 25px 0;
                         font-size: 24px;
-                        @media screen and (max-width: 400px){
+                        @media screen and (max-width: 992px){
                             font-size: 14px;
                         }
                     }
@@ -406,7 +438,7 @@
         .about__reviews {
             padding: 145px 0;
             @media screen and (max-width: 992px){
-                padding: 75px 0;
+                padding: 50px 0;
             }
             .reviews__h3 {
                 color: #333333;
@@ -423,6 +455,7 @@
                             margin-bottom: 135px;
                             @media screen and (max-width: 992px){
                                 justify-content: center;
+                                margin-bottom: 35px;
                             }
                             .icons-item {
                                 width: 150px;
@@ -440,7 +473,7 @@
                         margin: 0 auto;
                         box-sizing: border-box;
                         .comment-text {
-                            height: 127px;
+                            height: 150px;
                             font-size: 22px;
                             line-height: 27px;
                             color: #333333;
@@ -460,9 +493,6 @@
                         }
                     }  
                 }
-                // .reviews__control-block {
-                //     padding: 55px 0;
-                // }
             }   
         }
     }
@@ -471,13 +501,17 @@
 .footer {
 //// footer__title /////////
     .footer__title {
-        height: 430px;
-        padding: 120px 0;
+        padding: 120px 20px 150px;
         background-image: url("/img/footer-title.png");
         background-size: cover;
         color: #ffffff;
+        .footer-h2{
+            margin-bottom: 30px;
+        }
         .footer-h3 {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            color: #cccccc;
+            font-weight: 300;
         }
         .footer-button {
             @include main-button;
@@ -487,10 +521,13 @@
     .footer__contacts {
         color: #ffffff;
         background-color: #0d0d0d;
-        padding: 120px 0;
+        padding: 170px 0 130px;
         .contacts__social { 
-            padding-top: 70px;
-            // max-width: 500px;
+            padding-right: 120px;
+            @media screen and (max-width: 992px){
+                margin-bottom: 50px;
+                padding: 0;
+            }
             .social-h2 {     
                 margin-bottom: 42px;
                 text-transform: uppercase;
@@ -505,18 +542,22 @@
                 text-transform: uppercase;
             }
             .social-icons {
+                margin-bottom: 160px;
+                padding-right: 50px;
+                @media screen and (max-width: 992px){
+                    margin-bottom: 50px;
+                }
                 .social-link {
                     padding-right: 30px;
                     .social-icon {
                         width: 20px;
                         height: 20px;
-                        fill: #ffffff;
+                        fill: #666666;
                     } 
                 }
             }
             .footer__signature {
-                margin-top: 150px;
-                color: #ffffff;
+                color: #666666;
                 display: inline-flex;
                 text-transform: uppercase;
                 .signature-link {
@@ -527,13 +568,22 @@
                 }
             }
         }
-        .contacts__services {  
-            padding-top: 70px;
-            // max-width: 500px;
+        .contacts__services {
+            padding-left: 120px;
+            @media screen and (max-width: 992px){
+                padding: 0;
+            }
             .servisec-block {
+                @media screen and (max-width: 992px){
+                    margin-bottom:50px;
+                    text-align: center;
+                }
+                .services-h2{
+                    margin-bottom: 35px;
+                }
                 .services-link {   
                     .services-text {
-                        color:#ffffff;
+                        color: #666666;
                     }     
                     &:hover {
                         text-decoration: none;
