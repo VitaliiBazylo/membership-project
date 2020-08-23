@@ -11412,6 +11412,13 @@ body {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .header .header__title .title {
+    top: 80px;
+    padding-left: 20px;
+  }
+}
+
 .header .header__title .title .title-text {
   color: #222222;
   margin-bottom: 50px;
@@ -11429,6 +11436,13 @@ body {
   font-weight: 700;
   font-family: "Ubuntu";
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .header .header__title .title .title__button {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .main .about .about__header {
