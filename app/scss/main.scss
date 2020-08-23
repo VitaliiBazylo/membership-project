@@ -80,7 +80,6 @@
         } 
     }
 }
-
 ////////////////////////// MAIN ////////////////////////
 .main {
     .about { 
@@ -234,7 +233,6 @@
             }
             .price__group {
                 .price__item {
-                    // max-width: 250px;
                     margin-bottom: 150px;
                     .item__title {
                         display: inline-flex;
@@ -352,7 +350,6 @@
             @media screen and (max-width: 992px) {
                 padding: 100px 0;
             }
-
             .privilege__description {
                 margin-bottom: 100px;
                 @media screen and (max-width: 992px) {
@@ -444,7 +441,6 @@
                 .carousel-inner {
                     margin-bottom: 55px;
                     .carousel-item {
-                        
                         .reviews__icons {
                             justify-content: space-between;
                             margin-bottom: 135px;
