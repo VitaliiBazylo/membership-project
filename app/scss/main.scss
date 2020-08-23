@@ -217,12 +217,17 @@
                         }
                     }    
                 }
-                .description-button {
-                    @include main-button;
-                    width: 100%;
-                    max-width: 270px;
-                    background-color: #e5e1e1;    
-                }  
+                .demo__button {
+                    @media screen and (max-width: 992px) {
+                        text-align: center;
+                    }
+                    .description-button {
+                        @include main-button;
+                        width: 100%;
+                        max-width: 270px;
+                        background-color: #e5e1e1;
+                    }
+                }    
             }
         }
 /////// about__price /////////

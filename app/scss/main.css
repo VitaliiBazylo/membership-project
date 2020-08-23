@@ -11606,7 +11606,13 @@ body {
   padding: 15px 0;
 }
 
-.main .about .about__demo .demo__block .description-button {
+@media screen and (max-width: 992px) {
+  .main .about .about__demo .demo__block .demo__button {
+    text-align: center;
+  }
+}
+
+.main .about .about__demo .demo__block .demo__button .description-button {
   border: none;
   padding: 15px 50px;
   background-color: white;
