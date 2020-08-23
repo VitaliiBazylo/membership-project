@@ -11497,15 +11497,15 @@ body {
 }
 
 .main .about .about__grid .girl {
-  background-image: url(/img/girl.png);
+  background-image: url("../../img/girl.png");
 }
 
 .main .about .about__grid .comunity {
-  background-image: url(/img/comunity.png);
+  background-image: url("../../img/comunity.png");
 }
 
 .main .about .about__grid .goal {
-  background-image: url(/img/space.png);
+  background-image: url("../../img/space.png");
   background-size: auto;
 }
 
@@ -11538,7 +11538,7 @@ body {
 }
 
 .main .about .about__grid .cup {
-  background-image: url(/img/cup.png);
+  background-image: url("../../img/cup.png");
   background-size: auto 100%;
 }
 
@@ -11739,7 +11739,7 @@ body {
 }
 
 .main .about .about__news .news-container .news__block-top .news__block-img {
-  background-image: url(/img/wordpress.png);
+  background-image: url("../../img/wordpress.png");
   width: 100%;
   min-height: 600px;
 }
