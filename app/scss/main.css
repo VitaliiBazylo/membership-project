@@ -11164,9 +11164,9 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-size: 60px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1510px) {
   .my-h1 {
-    font-size: 30px;
+    font-size: 45px;
   }
 }
 
@@ -11174,9 +11174,9 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-size: 48px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1510px) {
   .my-h2 {
-    font-size: 24px;
+    font-size: 36px;
   }
 }
 
@@ -11184,9 +11184,9 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-size: 30px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1510px) {
   .my-h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
@@ -11194,9 +11194,9 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-size: 14px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1510px) {
   .text {
-    font-size: 1px;
+    font-size: 14px;
   }
 }
 
@@ -11342,13 +11342,11 @@ body {
 }
 
 .gutter-2.row {
-  margin-right: 0px;
-  margin-left: 0px;
+  margin: 0;
 }
 
 .gutter-2 > [class^="col-"], .gutter-2 > [class^=" col-"] {
-  padding-right: 0px;
-  padding-left: 0px;
+  padding: 0;
 }
 
 .header .navbar .navbar-collapse {
@@ -11396,7 +11394,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .header .header__title {
-    height: 580px;
+    height: 680px;
   }
 }
 
@@ -11409,7 +11407,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .header .header__title .title {
-    top: 80px;
+    top: 130px;
     padding-left: 20px;
   }
 }
@@ -11458,7 +11456,7 @@ body {
   background-color: #f8f8f8;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1510px) {
   .main .about .about__grid .grid__item-text {
     padding: 133px 30px;
   }
@@ -11482,7 +11480,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  text-decoration: none;
 }
 
 .main .about .about__grid .girl {
@@ -11493,21 +11490,36 @@ body {
   background-image: url(/img/comunity.png);
 }
 
-.main .about .about__grid .goal-top {
+.main .about .about__grid .goal {
   background-image: url(/img/space.png);
   background-size: auto;
 }
 
-.main .about .about__grid .goal-bottom {
+@media screen and (max-width: 992px) {
+  .main .about .about__grid .goal {
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main .about .about__grid .goal {
+    background-size: 160%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main .about .about__grid .goal {
+    background-size: 210%;
+  }
+}
+
+.main .about .about__grid .is-bottom {
   color: #cccccc;
-  background-image: url(/img/space.png);
-  background-repeat: no-repeat;
   background-position-y: -400px;
-  background-size: auto;
-  text-decoration: none;
+  background-position-x: center;
 }
 
-.main .about .about__grid .goal-bottom .grid-underline {
+.main .about .about__grid .is-bottom .grid-underline {
   border-color: #cccccc;
 }
 
@@ -11643,6 +11655,7 @@ body {
 
 .main .about .about__price .price__group .price__item .price-p {
   padding: 40px 10px;
+  color: #999999;
 }
 
 .main .about .about__price .price__group .price__item .price-button {
@@ -11761,6 +11774,7 @@ body {
 
 .main .about .about__news .news-container .news__block .news__block-container .news__subblock .news__block-text {
   padding: 25px 0;
+  color: #333333;
 }
 
 .main .about .about__news .news__button {
@@ -11831,7 +11845,7 @@ body {
   background-image: url("/img/price-bg.png");
   background-repeat: no-repeat;
   background-color: #0f0f0f;
-  color: white;
+  color: #ffffff;
   padding: 250px 0 345px 0;
 }
 
@@ -12007,6 +12021,7 @@ body {
   .footer .footer__contacts .contacts__social {
     margin-bottom: 50px;
     padding: 0;
+    text-align: center;
   }
 }
 

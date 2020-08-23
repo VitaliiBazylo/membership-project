@@ -52,26 +52,26 @@ $theme-colors: (
 // GENERAL DOCUMENT STYLES
 .my-h1{
 	font-size: 60px;
-	@media screen and (max-width: 992px){
-		font-size: 30px;	
+	@media screen and (max-width: 1510px){
+		font-size: 45px;	
 	}
 }
 .my-h2{
 	font-size: 48px;
-	@media screen and (max-width: 992px){
-		font-size: 24px;	
+	@media screen and (max-width: 1510px){
+		font-size: 36px;	
 	}
 }
 .my-h3{
 	font-size: 30px;
-	@media screen and (max-width: 992px){
-		font-size: 20px;	
+	@media screen and (max-width: 1510px){
+		font-size: 30px;	
 	}
 }
 .text{
 	font-size: 14px;
-	@media screen and (max-width: 992px){
-		font-size: 1px;	
+	@media screen and (max-width: 1510px){
+		font-size: 14px;	
 	}
 }
 
