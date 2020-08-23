@@ -47,8 +47,8 @@ $theme-colors: (
 
 
 
-@include font('Ubuntu', normal, 300, '../fonts/ubuntu-latin-regular.woff2');
-@include font('Lato', normal, 300, '../fonts/lato-regular.woff2');
+@include font('Ubuntu', normal, 300, '../../fonts/ubuntu-latin-regular.woff2');
+@include font('Lato', normal, 300, '../../fonts/lato-regular.woff2');
 // GENERAL DOCUMENT STYLES
 .my-h1{
 	font-size: 60px;
@@ -120,7 +120,7 @@ body {
 	content: "";
 	background: no-repeat center center;
 	background-size: 100% 100%;
-	background-image: url(/svg/logo.svg);
+	background-image: url("../../svg/logo.svg");
 	
   }
 
@@ -154,10 +154,10 @@ body {
 	background: no-repeat 50% / 100% 100%;
   }
   .my-carousel-control-prev-icon {
-	background-image: url(/svg/prew-icon.svg);
+	background-image: url("../../svg/prew-icon.svg");
   }
   .my-carousel-control-next-icon {
-	background-image: url(/svg/next-icon.svg);
+	background-image: url("../../svg/next-icon.svg");
   } 
 
 

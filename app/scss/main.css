@@ -11150,14 +11150,14 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 300;
-  src: local("Ubuntu"), url("../fonts/ubuntu-latin-regular.woff2") format("woff2");
+  src: local("Ubuntu"), url("../../fonts/ubuntu-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
-  src: local("Lato"), url("../fonts/lato-regular.woff2") format("woff2");
+  src: local("Lato"), url("../../fonts/lato-regular.woff2") format("woff2");
 }
 
 .my-h1 {
@@ -11267,7 +11267,7 @@ body {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
-  background-image: url(/svg/logo.svg);
+  background-image: url("../../svg/logo.svg");
 }
 
 .my-carousel-control-prev,
@@ -11315,11 +11315,11 @@ body {
 }
 
 .my-carousel-control-prev-icon {
-  background-image: url(/svg/prew-icon.svg);
+  background-image: url("../../svg/prew-icon.svg");
 }
 
 .my-carousel-control-next-icon {
-  background-image: url(/svg/next-icon.svg);
+  background-image: url("../../svg/next-icon.svg");
 }
 
 * {
