@@ -11385,7 +11385,7 @@ body {
   width: 100%;
   height: 900px;
   background-color: #ebecee;
-  background-image: url("img/title-background.png");
+  background-image: url("../../img/title-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -11610,7 +11610,7 @@ body {
 }
 
 .main .about .about__price {
-  background-image: url("img/price-bg.png");
+  background-image: url("../../img/price-bg.png");
   background-repeat: no-repeat;
   background-color: #0f0f0f;
   padding: 240px 0 315px 0;
@@ -11842,7 +11842,7 @@ body {
 }
 
 .main .about .about__facts {
-  background-image: url("img/price-bg.png");
+  background-image: url("../../img/price-bg.png");
   background-repeat: no-repeat;
   background-color: #0f0f0f;
   color: #ffffff;
@@ -11978,7 +11978,7 @@ body {
 
 .footer .footer__title {
   padding: 120px 20px 150px;
-  background-image: url("img/footer-title.png");
+  background-image: url("../../img/footer-title.png");
   background-size: cover;
   color: #ffffff;
 }
