@@ -66,6 +66,9 @@
             position: absolute;
             top:360px;
             padding-left: 120px;
+            @media screen and (max-width: 1212px) {
+                padding-left: 20px;
+            }
             @media screen and (max-width: 992px) {
                 top:130px;
                 padding-left: 20px;
@@ -149,7 +152,7 @@
             .goal {
                 background-image: url("../../img/space.png");
                 background-size: auto;
-                @media screen and (max-width: 992px) {
+                @media screen and (max-width: 991px) {
                     background-size: 100%;
                 }
                 @media screen and (max-width: 640px) {

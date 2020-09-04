@@ -11405,6 +11405,12 @@ body {
   padding-left: 120px;
 }
 
+@media screen and (max-width: 1212px) {
+  .header .header__title .title {
+    padding-left: 20px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .header .header__title .title {
     top: 130px;
@@ -11509,7 +11515,7 @@ body {
   background-size: auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .main .about .about__grid .goal {
     background-size: 100%;
   }
