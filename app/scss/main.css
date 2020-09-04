@@ -11557,7 +11557,7 @@ a {
 }
 
 .main .about .about__demo {
-  padding: 183px 0 230px 0;
+  padding: 180px 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -11653,7 +11653,7 @@ a {
   background-image: url("../../img/price-bg.png");
   background-repeat: no-repeat;
   background-color: #0f0f0f;
-  padding: 240px 0 315px 0;
+  padding: 180px 0;
   color: white;
 }
 
@@ -11721,7 +11721,7 @@ a {
 
 .main .about .about__news {
   background-color: #e8e9ea;
-  padding: 140px 0 115px 0;
+  padding: 180px 0;
 }
 
 .main .about .about__news .news-header {
@@ -11840,7 +11840,7 @@ a {
 }
 
 .main .about .about__privilege {
-  padding: 200px 0 100px 0;
+  padding: 180px 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -11894,7 +11894,7 @@ a {
   background-repeat: no-repeat;
   background-color: #0f0f0f;
   color: #ffffff;
-  padding: 250px 0 345px 0;
+  padding: 180px 0;
 }
 
 @media screen and (max-width: 400px) {
@@ -11946,7 +11946,7 @@ a {
 }
 
 .main .about .about__reviews {
-  padding: 145px 0;
+  padding: 180px 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -12025,7 +12025,7 @@ a {
 }
 
 .main .contact__title {
-  padding: 120px 20px 150px;
+  padding: 180px 20px;
   background-image: url("../../img/footer-title.png");
   background-size: cover;
   color: #ffffff;
@@ -12058,7 +12058,7 @@ a {
 .footer .footer__contacts {
   color: #ffffff;
   background-color: #0d0d0d;
-  padding: 170px 0 130px;
+  padding: 180px 0;
 }
 
 @media screen and (max-width: 992px) {
