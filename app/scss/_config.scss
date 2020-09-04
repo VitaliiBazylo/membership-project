@@ -50,19 +50,19 @@ $theme-colors: (
 @include font('Ubuntu', normal, 300, '../../fonts/ubuntu-latin-regular.woff2');
 @include font('Lato', normal, 300, '../../fonts/lato-regular.woff2');
 // GENERAL DOCUMENT STYLES
-.my-h1{
+.header1{
 	font-size: 60px;
 	@media screen and (max-width: 1510px){
 		font-size: 45px;	
 	}
 }
-.my-h2{
+.header2{
 	font-size: 48px;
 	@media screen and (max-width: 1510px){
 		font-size: 36px;	
 	}
 }
-.my-h3{
+.header3{
 	font-size: 30px;
 	@media screen and (max-width: 1510px){
 		font-size: 30px;	
@@ -100,7 +100,7 @@ body {
 	color: $textcolor;
 }
 
-.my-navbar-toggler {
+.new-navbar-toggler {
 	padding: 0;
 	@include font-size($navbar-toggler-font-size);
 	line-height: 1;
@@ -111,7 +111,7 @@ body {
 	}
   }
 
-.my-navbar-toggler-icon {
+.new-navbar-toggler-icon {
 	display: inline-block;
 	width: 2.5em;
 	height: 2.5em;
@@ -124,8 +124,8 @@ body {
 	
   }
 
-  .my-carousel-control-prev,
-  .my-carousel-control-next {
+  .new-carousel-control-prev,
+  .new-carousel-control-next {
 	margin: 0 auto;
 	padding: 10px;
 	display: inline-block;
@@ -146,17 +146,17 @@ body {
 	}
   }
   
-  .my-carousel-control-prev-icon,
-  .my-carousel-control-next-icon {
+  .new-carousel-control-prev-icon,
+  .new-carousel-control-next-icon {
 	display: inline-block;
 	width: $carousel-control-icon-width;
 	height: $carousel-control-icon-width;
 	background: no-repeat 50% / 100% 100%;
   }
-  .my-carousel-control-prev-icon {
+  .new-carousel-control-prev-icon {
 	background-image: url("../../svg/prew-icon.svg");
   }
-  .my-carousel-control-next-icon {
+  .new-carousel-control-next-icon {
 	background-image: url("../../svg/next-icon.svg");
   } 
 

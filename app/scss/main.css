@@ -11160,32 +11160,32 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   src: local("Lato"), url("../../fonts/lato-regular.woff2") format("woff2");
 }
 
-.my-h1 {
+.header1 {
   font-size: 60px;
 }
 
 @media screen and (max-width: 1510px) {
-  .my-h1 {
+  .header1 {
     font-size: 45px;
   }
 }
 
-.my-h2 {
+.header2 {
   font-size: 48px;
 }
 
 @media screen and (max-width: 1510px) {
-  .my-h2 {
+  .header2 {
     font-size: 36px;
   }
 }
 
-.my-h3 {
+.header3 {
   font-size: 30px;
 }
 
 @media screen and (max-width: 1510px) {
-  .my-h3 {
+  .header3 {
     font-size: 30px;
   }
 }
@@ -11247,7 +11247,7 @@ body {
   color: #333;
 }
 
-.my-navbar-toggler {
+.new-navbar-toggler {
   padding: 0;
   font-size: 1.25rem;
   line-height: 1;
@@ -11255,11 +11255,11 @@ body {
   border: none;
 }
 
-.my-navbar-toggler:hover, .my-navbar-toggler:focus {
+.new-navbar-toggler:hover, .new-navbar-toggler:focus {
   text-decoration: none;
 }
 
-.my-navbar-toggler-icon {
+.new-navbar-toggler-icon {
   display: inline-block;
   width: 2.5em;
   height: 2.5em;
@@ -11270,8 +11270,8 @@ body {
   background-image: url("../../svg/logo.svg");
 }
 
-.my-carousel-control-prev,
-.my-carousel-control-next {
+.new-carousel-control-prev,
+.new-carousel-control-next {
   margin: 0 auto;
   padding: 10px;
   display: inline-block;
@@ -11290,35 +11290,35 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .my-carousel-control-prev,
-  .my-carousel-control-next {
+  .new-carousel-control-prev,
+  .new-carousel-control-next {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-.my-carousel-control-prev:hover, .my-carousel-control-prev:focus,
-.my-carousel-control-next:hover,
-.my-carousel-control-next:focus {
+.new-carousel-control-prev:hover, .new-carousel-control-prev:focus,
+.new-carousel-control-next:hover,
+.new-carousel-control-next:focus {
   color: #fff;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
 }
 
-.my-carousel-control-prev-icon,
-.my-carousel-control-next-icon {
+.new-carousel-control-prev-icon,
+.new-carousel-control-next-icon {
   display: inline-block;
   width: 20px;
   height: 20px;
   background: no-repeat 50% / 100% 100%;
 }
 
-.my-carousel-control-prev-icon {
+.new-carousel-control-prev-icon {
   background-image: url("../../svg/prew-icon.svg");
 }
 
-.my-carousel-control-next-icon {
+.new-carousel-control-next-icon {
   background-image: url("../../svg/next-icon.svg");
 }
 
@@ -11327,7 +11327,11 @@ body {
   outline: none !important;
 }
 
-.my-container {
+a {
+  display: block;
+}
+
+.new-container {
   margin: 0 auto;
   padding: 0 auto;
   width: 100%;
@@ -11336,7 +11340,7 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  .my-container {
+  .new-container {
     padding: 0 10px;
   }
 }
@@ -11455,8 +11459,12 @@ body {
   padding: 90px 0;
 }
 
+.main .about .about__header .about__title .about__title-header {
+  margin-bottom: 35px;
+}
+
 .main .about .about__header .about__title .about__title-text {
-  padding: 35px;
+  margin-bottom: 35px;
 }
 
 .main .about .about__header .about__header-group .about__header-article .article-title {
@@ -11472,7 +11480,7 @@ body {
 }
 
 .main .about .about__grid .grid__item-text {
-  padding: 133px 144px;
+  padding: 133px 144px 0 144px;
   background-color: #f8f8f8;
 }
 
@@ -11482,7 +11490,7 @@ body {
   }
 }
 
-.main .about .about__grid .grid__item-text .item-text .grid-h2 {
+.main .about .about__grid .grid__item-text .item-text .grid-header {
   margin-bottom: 20px;
 }
 
@@ -11572,13 +11580,17 @@ body {
   }
 }
 
-.main .about .about__demo .demo__block .demo__title .demo__title-p {
-  padding: 25px 0;
+.main .about .about__demo .demo__block .demo__title .demo__title-header {
+  margin-bottom: 35px;
+}
+
+.main .about .about__demo .demo__block .demo__title .demo__title-text {
+  margin-bottom: 25px;
   font-size: 24px;
 }
 
 @media screen and (max-width: 992px) {
-  .main .about .about__demo .demo__block .demo__title .demo__title-p {
+  .main .about .about__demo .demo__block .demo__title .demo__title-text {
     font-size: 14px;
   }
 }
@@ -11591,6 +11603,7 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-bottom: 25px;
 }
 
 .main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description__icon {
@@ -11603,13 +11616,14 @@ body {
   padding: 0 30px;
 }
 
-.main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description-title .description-h3 {
+.main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description-title .description-header {
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description-title .description-p {
+.main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description-title .description-text {
   font-size: 14px;
-  padding: 15px 0;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 992px) {
@@ -11677,10 +11691,16 @@ body {
 .main .about .about__price .price__group .price__item .item__title .price-value {
   font-family: 'Lato', sans-serif;
   text-align: center;
+  margin-bottom: 25px;
 }
 
-.main .about .about__price .price__group .price__item .price-p {
-  padding: 40px 10px;
+.main .about .about__price .price__group .price__item .price-header {
+  margin-bottom: 25px;
+}
+
+.main .about .about__price .price__group .price__item .price-text {
+  padding: 0 10px;
+  margin-bottom: 40px;
   color: #999999;
 }
 
@@ -11704,8 +11724,8 @@ body {
   padding: 140px 0 115px 0;
 }
 
-.main .about .about__news .news-h2 {
-  padding-bottom: 67px;
+.main .about .about__news .news-header {
+  margin-bottom: 67px;
 }
 
 .main .about .about__news .news-label {
@@ -11767,7 +11787,7 @@ body {
   padding: 0 80px;
 }
 
-.main .about .about__news .news-container .news__block-top .news__block-title .news__block-p {
+.main .about .about__news .news-container .news__block-top .news__block-title .news__block-text {
   font-size: 11px;
   letter-spacing: 1px;
   color: #cccccc;
@@ -11777,17 +11797,18 @@ body {
   text-transform: uppercase;
 }
 
-.main .about .about__news .news-container .news__block-top .news__block-title .news__block-p .news-author {
+.main .about .about__news .news-container .news__block-top .news__block-title .news__block-text .news-author {
   color: #c89d28;
 }
 
 .main .about .about__news .news-container .news__block .news__block-container .news__subblock {
   position: relative;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 992px) {
   .main .about .about__news .news-container .news__block .news__block-container .news__subblock {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
   }
 }
 
@@ -11796,10 +11817,11 @@ body {
   height: 67%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 25px;
 }
 
 .main .about .about__news .news-container .news__block .news__block-container .news__subblock .news__block-text {
-  padding: 25px 0;
+  margin-bottom: 25px;
   color: #333333;
 }
 
@@ -11858,11 +11880,11 @@ body {
   fill: #c79d27;
 }
 
-.main .about .about__privilege .privilege__items .privilege .privilege__title .privilege-text .privilege-h3 {
+.main .about .about__privilege .privilege__items .privilege .privilege__title .privilege-text .privilege-header {
   color: #000000;
 }
 
-.main .about .about__privilege .privilege__items .privilege .privilege__title .privilege-text .privilege-p {
+.main .about .about__privilege .privilege__items .privilege .privilege__title .privilege-text .privilege-text {
   font-size: 16px;
   color: #000000;
 }
@@ -11998,28 +12020,28 @@ body {
   }
 }
 
-.main .about .about__reviews .carousel .carousel-inner .reviews__comment .comment-from .comment-place {
+.main .about .about__reviews .carousel .carousel-inner .reviews__comment .comment-from .comment-textlace {
   color: #999999;
 }
 
-.footer .footer__title {
+.main .contact__title {
   padding: 120px 20px 150px;
   background-image: url("../../img/footer-title.png");
   background-size: cover;
   color: #ffffff;
 }
 
-.footer .footer__title .footer-h2 {
+.main .contact__title .contact-header {
   margin-bottom: 30px;
 }
 
-.footer .footer__title .footer-h3 {
+.main .contact__title .contact-header {
   margin-bottom: 25px;
   color: #cccccc;
   font-weight: 300;
 }
 
-.footer .footer__title .footer-button {
+.main .contact__title .contact-button {
   border: none;
   padding: 15px 50px;
   background-color: white;
@@ -12039,10 +12061,6 @@ body {
   padding: 170px 0 130px;
 }
 
-.footer .footer__contacts .contacts__social {
-  padding-right: 120px;
-}
-
 @media screen and (max-width: 992px) {
   .footer .footer__contacts .contacts__social {
     margin-bottom: 50px;
@@ -12051,34 +12069,41 @@ body {
   }
 }
 
-.footer .footer__contacts .contacts__social .social-h2 {
+.footer .footer__contacts .contacts__social .social-header {
   margin-bottom: 42px;
   text-transform: uppercase;
 }
 
-.footer .footer__contacts .contacts__social .social-p {
+.footer .footer__contacts .contacts__social .social-text {
   margin-bottom: 30px;
   color: #666666;
 }
 
-.footer .footer__contacts .contacts__social .services-h2 {
+.footer .footer__contacts .contacts__social .services-header {
   margin-bottom: 42px;
   text-transform: uppercase;
 }
 
 .footer .footer__contacts .contacts__social .social-icons {
   margin-bottom: 160px;
-  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 992px) {
   .footer .footer__contacts .contacts__social .social-icons {
     margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .footer .footer__contacts .contacts__social .social-icons .social-link {
-  padding-right: 30px;
+  margin-right: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .footer .footer__contacts .contacts__social .social-icons .social-link .social-icon {
@@ -12104,7 +12129,7 @@ body {
 }
 
 .footer .footer__contacts .contacts__services {
-  padding-left: 120px;
+  padding: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -12120,7 +12145,7 @@ body {
   }
 }
 
-.footer .footer__contacts .contacts__services .servisec-block .services-h2 {
+.footer .footer__contacts .contacts__services .servisec-block .services-header {
   margin-bottom: 35px;
 }
 
