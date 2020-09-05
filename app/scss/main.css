@@ -11164,6 +11164,18 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   padding: 180px 0;
 }
 
+.margin-bottom-xs {
+  margin-bottom: 25px;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 35px;
+}
+
+.margin-bottom-m {
+  margin-bottom: 50px;
+}
+
 .new-container {
   margin: 0 auto;
   padding: 0 auto;
@@ -11200,27 +11212,21 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   font-size: 48px;
 }
 
-@media screen and (max-width: 1510px) {
-  .header2 {
-    font-size: 36px;
-  }
-}
-
 .header3 {
   font-size: 30px;
-}
-
-@media screen and (max-width: 1510px) {
-  .header3 {
-    font-size: 30px;
-  }
 }
 
 .text {
   font-size: 14px;
 }
 
-@media screen and (max-width: 1510px) {
+@media screen and (max-width: 992px) {
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 337px) {
   .text {
     font-size: 14px;
   }
@@ -11435,7 +11441,6 @@ a {
 
 .header .header__title .title .title-text {
   color: #222222;
-  margin-bottom: 50px;
 }
 
 .header .header__title .title .title__button {
@@ -11463,19 +11468,11 @@ a {
   padding: 90px 0;
 }
 
-.main .about .about__header .about__title .about__title-header {
-  margin-bottom: 35px;
-}
-
-.main .about .about__header .about__title .about__title-text {
-  margin-bottom: 35px;
-}
-
-.main .about .about__header .about__header-group .about__header-article .article-title {
+.main .about .about__header-group .about__header-article .article-title {
   padding: 35px;
 }
 
-.main .about .about__header .about__header-group .about__header-article .article-img {
+.main .about .about__header-group .about__header-article .article-img {
   width: 100%;
 }
 
@@ -11566,6 +11563,12 @@ a {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .main .about .about__demo .demo__block {
+    margin-bottom: 50px;
+  }
+}
+
 .main .about .about__demo .demo__block .demo-img {
   width: 100%;
 }
@@ -11580,12 +11583,7 @@ a {
   }
 }
 
-.main .about .about__demo .demo__block .demo__title .demo__title-header {
-  margin-bottom: 35px;
-}
-
 .main .about .about__demo .demo__block .demo__title .demo__title-text {
-  margin-bottom: 25px;
   font-size: 24px;
 }
 
@@ -11595,15 +11593,10 @@ a {
   }
 }
 
-.main .about .about__demo .demo__block .demo__title .demo__title-description {
-  margin-bottom: 60px;
-}
-
 .main .about .about__demo .demo__block .demo__title .demo__title-description .description-item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-bottom: 25px;
 }
 
 .main .about .about__demo .demo__block .demo__title .demo__title-description .description-item .description__icon {
@@ -11690,11 +11683,6 @@ a {
 .main .about .about__price .price__group .price__item .item__title .price-value {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  margin-bottom: 25px;
-}
-
-.main .about .about__price .price__group .price__item .price-header {
-  margin-bottom: 25px;
 }
 
 .main .about .about__price .price__group .price__item .price-text {
@@ -11732,7 +11720,7 @@ a {
   left: 25px;
 }
 
-.main .about .about__news .news-label .lebel-text {
+.main .about .about__news .news-label .label-text {
   border: none;
   padding: 15px 50px;
   background-color: white;
@@ -11753,13 +11741,8 @@ a {
   text-align: center;
 }
 
-.main .about .about__news .news-container {
-  margin-bottom: 60px;
-}
-
 .main .about .about__news .news-container .news__block-top {
   position: relative;
-  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 992px) {
@@ -11801,13 +11784,6 @@ a {
 
 .main .about .about__news .news-container .news__block .news__block-container .news__subblock {
   position: relative;
-  margin-bottom: 25px;
-}
-
-@media screen and (max-width: 992px) {
-  .main .about .about__news .news-container .news__block .news__block-container .news__subblock {
-    margin-bottom: 100px;
-  }
 }
 
 .main .about .about__news .news-container .news__block .news__block-container .news__subblock .news__block-img {
@@ -11815,11 +11791,9 @@ a {
   height: 67%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 25px;
 }
 
 .main .about .about__news .news-container .news__block .news__block-container .news__subblock .news__block-text {
-  margin-bottom: 25px;
   color: #333333;
 }
 
@@ -12023,8 +11997,7 @@ a {
   margin-bottom: 30px;
 }
 
-.main .about .about__contact .contact__title .contact-header {
-  margin-bottom: 25px;
+.main .about .about__contact .contact__title .contact-text {
   color: #cccccc;
   font-weight: 300;
 }
@@ -12131,10 +12104,6 @@ a {
     margin-bottom: 50px;
     text-align: center;
   }
-}
-
-.footer .footer__contacts .contacts__services .servisec-block .services-header {
-  margin-bottom: 35px;
 }
 
 .footer .footer__contacts .contacts__services .servisec-block .services-link .services-text {

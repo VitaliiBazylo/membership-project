@@ -53,6 +53,16 @@ $theme-colors: (
 .main-padding{
 	padding: 180px 0;
 }
+
+.margin-bottom-xs{
+	margin-bottom: 25px;
+}
+.margin-bottom-sm{
+	margin-bottom: 35px;
+}
+.margin-bottom-m{
+	margin-bottom: 50px;
+}
 .new-container {
     margin: 0 auto;
     padding: 0 auto;
@@ -78,19 +88,16 @@ $theme-colors: (
 }
 .header2{
 	font-size: 48px;
-	@media screen and (max-width: 1510px){
-		font-size: 36px;	
-	}
 }
 .header3{
 	font-size: 30px;
-	@media screen and (max-width: 1510px){
-		font-size: 30px;	
-	}
 }
 .text{
 	font-size: 14px;
-	@media screen and (max-width: 1510px){
+	@media screen and (max-width: 992px){
+		font-size: 20px;	
+	}
+	@media screen and (max-width: 337px){
 		font-size: 14px;	
 	}
 }
