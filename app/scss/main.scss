@@ -7,22 +7,8 @@
 a {
     display: block;
 }
-.new-container {
-    margin: 0 auto;
-    padding: 0 auto;
-    width: 100%;
-    max-width: 1210px;
-    text-align: center;
-    @media screen and (max-width: 992px){
-        padding: 0 10px;
-    }
-}
-.gutter-2.row {
-    margin: 0;
-  }
-  .gutter-2 > [class^="col-"], .gutter-2 > [class^=" col-"] {
-    padding: 0;
-  }
+
+
 ////////////////////////// HEADER ////////////////////////
 .header {
 //// navbar /////////
@@ -184,7 +170,6 @@ a {
         }
 //////// about__demo /////////
         .about__demo {
-            padding: 180px 0;
             @media screen and (max-width: 992px) {
                 padding: 150px 0;
             }
@@ -249,7 +234,6 @@ a {
             background-image: url("../../img/price-bg.png");
             background-repeat: no-repeat;
             background-color: #0f0f0f;
-            padding: 180px 0;
             color: white;
             @media screen and (max-width: 992px){
                 padding: 150px 0;
@@ -296,7 +280,6 @@ a {
 //////// about__news /////////
         .about__news {
             background-color: #e8e9ea;
-            padding: 180px 0;
             .news-header {
                 margin-bottom: 67px;
             }
@@ -379,7 +362,6 @@ a {
         }
 //////// about__privilege /////////
         .about__privilege {
-            padding: 180px 0;
             @media screen and (max-width: 992px) {
                 padding: 100px 0;
             }
@@ -422,7 +404,6 @@ a {
             background-repeat: no-repeat;
             background-color: #0f0f0f;
             color: #ffffff;
-            padding: 180px 0;
             @media screen and (max-width: 400px) {
                 padding: 150px 0;
             }
@@ -461,7 +442,6 @@ a {
         }
 //////// about__reviews /////////
         .about__reviews {
-            padding: 180px 0;
             @media screen and (max-width: 992px) {
                 padding: 50px 0;
             }
@@ -519,24 +499,26 @@ a {
                 }
             }   
         }
-    }
-    .contact__title {
-        padding: 180px 20px;
-        background-image: url("../../img/footer-title.png");
-        background-size: cover;
-        color: #ffffff;
-        .contact-header{
-            margin-bottom: 30px;
-        }
-        .contact-header {
-            margin-bottom: 25px;
-            color: #cccccc;
-            font-weight: 300;
-        }
-        .contact-button {
-            @include main-button;
-        }
-    }
+//////// about__contact /////////
+        .about__contact {
+            .contact__title {
+                background-image: url("../../img/footer-title.png");
+                background-size: cover;
+                color: #ffffff;
+                .contact-header{
+                    margin-bottom: 30px;
+                }
+                .contact-header {
+                    margin-bottom: 25px;
+                    color: #cccccc;
+                    font-weight: 300;
+                }
+                .contact-button {
+                    @include main-button;
+                }
+            }
+        }   
+    } 
 }
 ////////////////////////// FOOTER ////////////////////////
 .footer {   

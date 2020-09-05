@@ -50,6 +50,26 @@ $theme-colors: (
 @include font('Ubuntu', normal, 300, '../../fonts/ubuntu-latin-regular.woff2');
 @include font('Lato', normal, 300, '../../fonts/lato-regular.woff2');
 // GENERAL DOCUMENT STYLES
+.main-padding{
+	padding: 180px 0;
+}
+.new-container {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+    max-width: 1210px;
+    text-align: center;
+    @media screen and (max-width: 992px){
+        padding: 0 10px;
+    }
+}
+.gutter-2.row {
+    margin: 0;
+  }
+.gutter-2 > [class^="col-"], .gutter-2 > [class^=" col-"] {
+    padding: 0;
+  }
+
 .header1{
 	font-size: 60px;
 	@media screen and (max-width: 1510px){

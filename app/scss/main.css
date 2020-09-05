@@ -11160,6 +11160,32 @@ a.text-main-dark:hover, a.text-main-dark:focus {
   src: local("Lato"), url("../../fonts/lato-regular.woff2") format("woff2");
 }
 
+.main-padding {
+  padding: 180px 0;
+}
+
+.new-container {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  max-width: 1210px;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .new-container {
+    padding: 0 10px;
+  }
+}
+
+.gutter-2.row {
+  margin: 0;
+}
+
+.gutter-2 > [class^="col-"], .gutter-2 > [class^=" col-"] {
+  padding: 0;
+}
+
 .header1 {
   font-size: 60px;
 }
@@ -11329,28 +11355,6 @@ body {
 
 a {
   display: block;
-}
-
-.new-container {
-  margin: 0 auto;
-  padding: 0 auto;
-  width: 100%;
-  max-width: 1210px;
-  text-align: center;
-}
-
-@media screen and (max-width: 992px) {
-  .new-container {
-    padding: 0 10px;
-  }
-}
-
-.gutter-2.row {
-  margin: 0;
-}
-
-.gutter-2 > [class^="col-"], .gutter-2 > [class^=" col-"] {
-  padding: 0;
 }
 
 .header .navbar .navbar-collapse {
@@ -11556,10 +11560,6 @@ a {
   background-size: auto 100%;
 }
 
-.main .about .about__demo {
-  padding: 180px 0;
-}
-
 @media screen and (max-width: 992px) {
   .main .about .about__demo {
     padding: 150px 0;
@@ -11653,7 +11653,6 @@ a {
   background-image: url("../../img/price-bg.png");
   background-repeat: no-repeat;
   background-color: #0f0f0f;
-  padding: 180px 0;
   color: white;
 }
 
@@ -11721,7 +11720,6 @@ a {
 
 .main .about .about__news {
   background-color: #e8e9ea;
-  padding: 180px 0;
 }
 
 .main .about .about__news .news-header {
@@ -11839,10 +11837,6 @@ a {
   text-align: center;
 }
 
-.main .about .about__privilege {
-  padding: 180px 0;
-}
-
 @media screen and (max-width: 992px) {
   .main .about .about__privilege {
     padding: 100px 0;
@@ -11894,7 +11888,6 @@ a {
   background-repeat: no-repeat;
   background-color: #0f0f0f;
   color: #ffffff;
-  padding: 180px 0;
 }
 
 @media screen and (max-width: 400px) {
@@ -11943,10 +11936,6 @@ a {
   text-align: center;
   margin: 0 auto;
   padding: 0 25px;
-}
-
-.main .about .about__reviews {
-  padding: 180px 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -12024,24 +12013,23 @@ a {
   color: #999999;
 }
 
-.main .contact__title {
-  padding: 180px 20px;
+.main .about .about__contact .contact__title {
   background-image: url("../../img/footer-title.png");
   background-size: cover;
   color: #ffffff;
 }
 
-.main .contact__title .contact-header {
+.main .about .about__contact .contact__title .contact-header {
   margin-bottom: 30px;
 }
 
-.main .contact__title .contact-header {
+.main .about .about__contact .contact__title .contact-header {
   margin-bottom: 25px;
   color: #cccccc;
   font-weight: 300;
 }
 
-.main .contact__title .contact-button {
+.main .about .about__contact .contact__title .contact-button {
   border: none;
   padding: 15px 50px;
   background-color: white;
