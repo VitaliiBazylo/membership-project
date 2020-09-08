@@ -63,7 +63,7 @@ $theme-colors: (
 .margin-bottom-m{
 	margin-bottom: 50px;
 }
-.new-container {
+.main-container {
     margin: 0 auto;
     padding: 0 auto;
     width: 100%;
@@ -80,16 +80,16 @@ $theme-colors: (
     padding: 0;
   }
 
-.header1{
+.title-1{
 	font-size: 60px;
 	@media screen and (max-width: 1510px){
 		font-size: 45px;	
 	}
 }
-.header2{
+.title-2{
 	font-size: 48px;
 }
-.header3{
+.title-3{
 	font-size: 30px;
 }
 .text{

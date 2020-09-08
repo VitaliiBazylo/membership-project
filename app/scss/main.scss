@@ -82,32 +82,31 @@ a {
 .main {
     .about { 
 //////// about__header /////////
-        .about__header {  
+        .about__top {  
             padding: 90px 0;
             } 
-            .about__header-group {
-                .about__header-article {
-                    .article-title {
-                        padding: 35px;
-                    }
+            .top__group {
+                .group__article {
                     .article-img {
                         width: 100%;
                     }
+                    .article__header {
+                        padding: 35px;
+                    }
+                    
                 }
             }
 //////// about__grid /////////
         .about__grid { 
-            .grid__item {
+            .grid__item--text {
                 height: 400px;
-            }
-            .grid__item-text {
                 padding: 133px 144px 0 144px;
                 background-color: #f8f8f8;
                 @media screen and (max-width: 1510px) {
                     padding: 133px 30px;
                 }
-                .item-text {
-                    .grid-header {
+                .item__description {
+                    .item-title {
                         margin-bottom: 50px;
                         position: relative;
                         &:after{
@@ -124,7 +123,8 @@ a {
             .is-sand {
                 background-color: #f4f0eb;
             }
-            .grid__item-img {
+            .grid__item--img {
+                height: 400px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position-x: center;
@@ -153,8 +153,8 @@ a {
                 color: #cccccc;
                 background-position-y: -400px;
                 background-position-x: center;
-                .item-text{
-                    .grid-header {
+                .item__description{
+                    .item-title {
                         &:after{
                             border-color: #cccccc;
                         }
@@ -179,32 +179,32 @@ a {
                 .demo-img {
                     width: 100%;
                 }
-                .demo__title {
+                .demo__description {
                     max-width: 400px;
                     @media screen and (max-width: 992px) {
                         padding: 0;
                     }
-                    .demo__title-text {
+                    .demo__description-text {
                         font-size: 24px;
                         @media screen and (max-width: 992px) {
                             font-size: 14px;
                         }
                     }
-                    .demo__title-description {
-                        .description-item {
+                    .description__items {
+                        .description__item {
                             display: inline-flex;
                             .description__icon {
                                 width: 80px;
                                 height: 80px;
                                 fill:#c89d28;
                             }
-                            .description-title {
+                            .description__item-header {
                                 padding: 0 30px;
-                                .description-header {
+                                .description__item-title {
                                     font-weight: 400;
                                     margin-bottom: 10px;
                                 }
-                                .description-text {
+                                .description__item-text {
                                     font-size: 14px;
                                     margin-bottom: 15px;
                                 }
@@ -216,7 +216,7 @@ a {
                     @media screen and (max-width: 992px) {
                         text-align: center;
                     }
-                    .description-button {
+                    .demo__button-text {
                         @include main-button;
                         width: 100%;
                         max-width: 270px;
@@ -240,29 +240,29 @@ a {
             .price__group {
                 .price__item {
                     margin-bottom: 150px;
-                    .item__title {
+                    .price__item-header {
                         display: inline-flex;
                         font-size: 64px;
                         color: #c89d28;
                         font-weight: 100;
                         font-family: 'Lato', sans-serif;
                         text-align: center;
-                        .price-currency {
+                        .price__item-currency {
                             padding-top: 15px;
                             font-size: 30px;
                             font-family: 'Lato', sans-serif;   
                         }
-                        .price-value {
+                        .price__item-value {
                             font-family: 'Lato', sans-serif;
                             text-align: center;
                         }
                     }
-                    .price-text {
+                    .price__item-text {
                         padding: 0 10px;
                         margin-bottom: 40px;
                         color: #999999;
                     }
-                    .price-button {
+                    .price__button {
                         @include main-button;
                         width: 207px;
                     }
@@ -272,14 +272,14 @@ a {
 //////// about__news /////////
         .about__news {
             background-color: #e8e9ea;
-            .news-header {
+            .news__header {
                 margin-bottom: 67px;
             }
-            .news-label {
+            .news__label {
                 position: absolute;
                 top: 15px;
                 left: 25px;
-                .label-text {
+                .news__label-text {
                     @include main-button;
                     padding: 15px 25px;
                     background-color: #8d7431;
@@ -290,18 +290,18 @@ a {
                     text-align: center; 
                 }
             }
-            .news-container {
-                .news__block-top {
+            .news__container {
+                .news__block--top {
                     position: relative;
                     @media screen and (max-width: 992px) {
                         padding-bottom: 100px;
                     }
-                    .news__block-img {
+                    .news__item-img {
                         background-image: url("../../img/wordpress.png");
                         width: 100%;
                         min-height: 600px;
                     }
-                    .news__block-title {
+                    .news__item-header {
                         position: absolute;
                         top: 280px;
                         font-size: 30px;
@@ -310,7 +310,7 @@ a {
                         font-family: "Ubuntu";
                         text-align: center;
                         padding: 0 80px;
-                        .news__block-text {
+                        .news__item-text {
                             font-size: 11px;
                             letter-spacing: 1px;
                             color: #cccccc;
@@ -318,22 +318,22 @@ a {
                             font-family: "Ubuntu";
                             text-align: center;
                             text-transform: uppercase;
-                            .news-author {
+                            .news__item-author {
                                 color: #c89d28;
                             }
                         }
                     }
                 }
                 .news__block {
-                    .news__block-container {
-                        .news__subblock {
+                    .news__items {
+                        .news__item{
                             position: relative;
-                            .news__block-img {
+                            .news__item-img {
                                 width: 100%;
                                 height: 67%;
                                 object-fit: cover; 
                             }
-                            .news__block-text {
+                            .news__item-text {
                                 color: #333333;
                             }
                         }
@@ -359,26 +359,24 @@ a {
                 .privilege {
                     min-height: 200px;
                     margin-bottom: 55px;
-                    .privilege__title {
-                        display: flex;
-                        .privilege-icon{
-                            padding-right: 29px;
-                            .privilege-svg {
-                                width: 50px;
-                                height: 50px;
-                                fill: #c79d27;
-                            }
-                        }
-                        .privilege-text {
-                            .privilege-header {
-                                color: #000000;    
-                            }
-                            .privilege-text {
-                                font-size: 16px;
-                                color: #000000;
-                            }
+                    display: flex;  
+                    .privilege-icon{
+                        padding-right: 29px;
+                        .privilege-svg {
+                            width: 50px;
+                            height: 50px;
+                            fill: #c79d27;
                         }
                     }
+                    .privilege__header {
+                        .privilege-title {
+                            color: #000000;    
+                        }
+                        .privilege-text {
+                            font-size: 16px;
+                            color: #000000;
+                        }
+                    }   
                 }
             }    
         }
@@ -394,31 +392,30 @@ a {
             .facts__title {
                 margin-bottom: 100px;
             }
-            .facts__group {
+            .facts__items {
                 padding: 0 75px;
                 @media screen and (max-width: 400px) {
                     padding: 0;
                 }
                 .facts__item {
                     margin-bottom: 122px;
-                    .facts-title {
+                    .facts__item-header {
                         font-size: 48px; 
-                        .facts-value {
+                        .facts__item-value {
                             font-size: 64px;
                             color: #c89d28;
                             font-family: 'Lato', sans-serif;
                             text-align: center;
                             font-weight: 100;
                         }
-                        .facts-text {
+                        .facts__item-text {
                             font-size: 18px;
                         }
                     }
                 }
             }
-            .facts__h3 {
+            .facts-description {
                 color: #999999;
-                font-weight: 300;
                 text-align: center;
                 margin: 0 auto;
                 padding: 0 25px;
@@ -429,7 +426,7 @@ a {
             @media screen and (max-width: 992px) {
                 padding: 50px 0;
             }
-            .reviews__h3 {
+            .reviews-title {
                 color: #333333;
                 font-weight: 300;
                 margin-bottom: 80px;
@@ -445,7 +442,7 @@ a {
                                 justify-content: center;
                                 margin-bottom: 35px;
                             }
-                            .icons-item {
+                            .reviews-item {
                                 width: 150px;
                                 height: 150px;
                                 @media screen and (max-width: 992px) {
@@ -475,7 +472,7 @@ a {
                                     padding: 0;
                                 }
                             }
-                            .comment-textlace {
+                            .comment-place {
                                 color: #999999;
                             }
                         }
@@ -485,18 +482,24 @@ a {
         }
 //////// about__contact /////////
         .about__contact {
-            .contact__title {
+            .contact__header {
                 background-image: url("../../img/footer-title.png");
                 background-size: cover;
                 color: #ffffff;
-                .contact-header{
+                .contact-title{
                     margin-bottom: 30px;
+                    @media screen and (max-width: 992px){
+                        font-size: 32px;
+                    }
                 }
                 .contact-text {
                     color: #cccccc;
                     font-weight: 300;
+                    @media screen and (max-width: 992px){
+                        font-size: 20px;
+                    }
                 }
-                .contact-button {
+                .contact__button {
                     @include main-button;
                 }
             }
@@ -505,18 +508,17 @@ a {
 }
 ////////////////////////// FOOTER ////////////////////////
 .footer {   
-//// footer__contacts /////////
-    .footer__contacts {
-        color: #ffffff;
-        background-color: #0d0d0d;
-        padding: 180px 0;
-        .contacts__social { 
-            @media screen and (max-width: 992px) {
-                margin-bottom: 50px;
-                padding: 0;
-                text-align: center;
-            }
-            .social-header {     
+    color: #ffffff;
+    background-color: #0d0d0d;
+    padding: 180px 0;
+    .footer__social { 
+        @media screen and (max-width: 992px) {
+            margin-bottom: 50px;
+            padding: 0;
+            text-align: center;
+        }
+        .social__header{
+            .social-title {     
                 margin-bottom: 42px;
                 text-transform: uppercase;   
             }
@@ -524,59 +526,59 @@ a {
                 margin-bottom: 30px;
                 color: #666666;
             }
-            .services-header {
-                margin-bottom: 42px;
-                text-transform: uppercase;
+        }
+        .services__header {
+            margin-bottom: 42px;
+            text-transform: uppercase;
+        }
+        .social-icons {
+            margin-bottom: 160px;
+            display: flex;
+            @media screen and (max-width: 992px) {
+                margin-bottom: 50px;
+                justify-content: center;
             }
-            .social-icons {
-                margin-bottom: 160px;
-                display: flex;
-                @media screen and (max-width: 992px) {
-                    margin-bottom: 50px;
-                    justify-content: center;
-                }
-                .social-link {
-                    margin-right: 30px;
+            .social-link {
+                margin-right: 30px;
+                width: 20px;
+                height: 20px;
+                .social-icon {
                     width: 20px;
                     height: 20px;
-                    .social-icon {
-                        width: 20px;
-                        height: 20px;
-                        fill: #666666;
-                    } 
-                }
+                    fill: #666666;
+                } 
             }
-            .footer__signature {
-                color: #666666;
-                display: inline-flex;
-                text-transform: uppercase;
-                .signature-link {
-                    color:#c89d28;
-                    &:hover {
-                        text-decoration: none;   
-                    }
+        }
+        .footer__signature {
+            color: #666666;
+            display: inline-flex;
+            text-transform: uppercase;
+            .signature-link {
+                color:#c89d28;
+                &:hover {
+                    text-decoration: none;   
                 }
             }
         }
-        .contacts__services {
+    }
+    .contacts__services {
+        padding: 0;
+        @media screen and (max-width: 992px) {
             padding: 0;
+        }
+        .servisec__block {
             @media screen and (max-width: 992px) {
-                padding: 0;
+                margin-bottom:50px;
+                text-align: center;
             }
-            .servisec-block {
-                @media screen and (max-width: 992px) {
-                    margin-bottom:50px;
-                    text-align: center;
-                }
-                .services-link {   
-                    .services-text {
-                        color: #666666;
-                    }     
-                    &:hover {
-                        text-decoration: none;
-                    }       
-                } 
-            }
+            .services-link {   
+                .services-text {
+                    color: #666666;
+                }     
+                &:hover {
+                    text-decoration: none;
+                }       
+            } 
         }
     }
 }
